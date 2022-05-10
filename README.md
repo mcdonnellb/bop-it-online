@@ -1,10 +1,41 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+##  Bop-it Online ineractive site
+My idea for project 2 is for an interactive 'Bop-it' online game. To meet the project criteria, this needs to utilise HTML, CSS and Javascript, as well as incorporating user choice when it comes to the display of information, or to achieve their preferred goals.
 
-Welcome USER_NAME,
+Bop it was a game popularised in the 90's as a boredom beater, whereby the user would be guided by audio to selectand engage with one of the 5 choices below.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+  Bop it
+  Flick it
+  Twist it 
+  Pull it
+  Spin it 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The user had approximately 2 seconds to make the correct choice or they lose the game. My interactive site will be built around the same principles of chance.
+
+Elements I wish to include:
+
+*Theme selector - potentially bright and light or dark mode
+*or possible language selector (depending on difficulty I will need to research this)
+* Name input field prior to game kick off
+* high score capture 
+* High score dhasboard on main page.
+##  Project Example Idea 1
+Build a Rock, Paper, Scissors, Lizard, Spock Game
+
+####  External user’s goal:
+
+    The site’s users want to play an online game that has elements of chance.
+
+####  Site owner's goal:
+
+    The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
+
+Potential features to include:
+
+    Pattern matching functionality
+    A limited number of tries before the game is over
+    A score tracking system
+    The ability to play against the computer
+
 
 ## Gitpod Reminders
 

@@ -1,5 +1,13 @@
-##  Bop-it Online ineractive site
-My idea for project 2 is for an interactive 'Bop-it' online game. To meet the project criteria, this needs to utilise HTML, CSS and Javascript, as well as incorporating user choice when it comes to the display of information, or to achieve their preferred goals.
+## Project 2
+
+
+####  Bop-it Online ineractive site
+My idea for project 2 is for an interactive 'Bop-it' online game. To meet the project criteria, this needs to be an interactive site as well as incorporating user choice when it comes to the display of information, or to achieve their preferred goals.
+
+## Technologies used:
+*HTML
+*CSS
+*JavaScript
 
 Bop it was a game popularised in the 90's as a boredom beater, whereby the user would be guided by audio to selectand engage with one of the 5 choices below.
 
@@ -9,131 +17,88 @@ Bop it was a game popularised in the 90's as a boredom beater, whereby the user 
   Pull it
   Spin it 
 
-The user had approximately 2 seconds to make the correct choice or they lose the game. My interactive site will be built around the same principles of chance.
+The user had approximately a few seconds to make the correct choice or they lose the game. The time decreases the higher the score you attain thus increasing the difficulty of the game, and increasing the chance of human error. My interactive site will be built around the same principles of chance.
 
-Elements I wish to include:
+#### Elements I wish to include:
 
-*Theme selector - potentially bright and light or dark mode
-*or possible language selector (depending on difficulty I will need to research this)
+* Theme selector - potentially bright and light or dark mode
+* Language selector (depending on difficulty I will need to research this)
 * Name input field prior to game kick off
-* high score capture 
-* High score dhasboard on main page.
-##  Project Example Idea 1
-Build a Rock, Paper, Scissors, Lizard, Spock Game
+* High score capture 
+* High score dahsboard on main page.
 
-####  External user’s goal:
+#### UX
+##  External user’s goal:
 
     The site’s users want to play an online game that has elements of chance.
 
-####  Site owner's goal:
+##  Site owner's goal:
 
     The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
 
-Potential features to include:
+## Potential features to include:
 
     Pattern matching functionality
     A limited number of tries before the game is over
     A score tracking system
     The ability to play against the computer
+    
+    
+*Theme selector - potentially bright and light or dark mode
+*or possible language selector (depending on difficulty I will need to research this)
+* Name input field prior to game kick off
+* limited number of tries before the game is over
+* high score capture 
+* High score dahsboard on main page.
 
 
-## Gitpod Reminders
+## Design
+The colors I have chosen are once again in line with my personal minimalistic preference.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Background:
+Font: 
+
+
+#### Typography
+The typography used throughout the site was specifically chosen as I felt it was a playful yet readable font.
+
+
+#### Images and Media
+The images used for this project have been taken from the below sites:
+
+
+
+## Citations
 
 `python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+w3 schoools
+Github
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Thank you for my mentor!
 
 ------
 
-## Release History
+## Testing
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The first round of testing ws physically checking for errors in the validators, which was completed on a daily basis was to run through the HTML and CSS validators to ensure there were no errors. I decided to do this daily to reduce the chance of introducing lots of errors in to my code which would take a long time to debug and resolve. This is one of the major lessons learned from my last project.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Lighthouse testing 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+User testing
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Error Log 
+Some of the critical errors found and the items used to overcome the errors
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
 ------
 
-## FAQ about the uptime script
+#### Items to be addressed in future iterations
+anything that I have been unable to implement
+anything that 
 
-**Why have you added this script?**
+#### Lessons Learned
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!

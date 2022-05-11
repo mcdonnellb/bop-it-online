@@ -36,16 +36,10 @@ The user had approximately a few seconds to make the correct choice or they lose
 
     The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
 
-## Potential features to include:
-
-    Pattern matching functionality
-    A limited number of tries before the game is over
-    A score tracking system
-    The ability to play against the computer
     
     
-*Theme selector - potentially bright and light or dark mode
-*or possible language selector (depending on difficulty I will need to research this)
+* Theme selector - potentially bright and light or dark mode
+* Language selector (depending on difficulty I will need to research this)
 * Name input field prior to game kick off
 * limited number of tries before the game is over
 * high score capture 
@@ -76,6 +70,8 @@ The images used for this project have been taken from the below sites:
 w3 schoools
 Github
 
+https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page
+
 Thank you for my mentor!
 
 ------
@@ -87,6 +83,13 @@ The first round of testing ws physically checking for errors in the validators, 
 Lighthouse testing 
 
 User testing
+
+Peer Code Review 
+
+Mentor 
+
+Tutor
+
 
 
 ## Error Log 

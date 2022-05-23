@@ -17,12 +17,11 @@ Bop it was a game popularised in the 90's as a boredom beater, whereby the user 
   Pull it
   Spin it 
 
-The user had approximately a few seconds to make the correct choice or they lose the game. The time decreases the higher the score you attain thus increasing the difficulty of the game, and increasing the chance of human error. My interactive site will be built around the same principles of chance.
+The user had approximately 4/5 few seconds to make the correct choice or they lose the game. The time decreases the higher the score you attain thus increasing the difficulty of the game, and increasing the chance of human error. My interactive site will be built around the same principles of chance.
 
 #### Elements I wish to include:
 
 * Theme selector - potentially bright and light or dark mode
-* Language selector (depending on difficulty I will need to research this)
 * Name input field prior to game kick off
 * High score capture 
 * High score dahsboard on main page.
@@ -39,7 +38,6 @@ The user had approximately a few seconds to make the correct choice or they lose
     
     
 * Theme selector - potentially bright and light or dark mode
-* Language selector (depending on difficulty I will need to research this)
 * Name input field prior to game kick off
 * limited number of tries before the game is over
 * high score capture 
@@ -47,14 +45,20 @@ The user had approximately a few seconds to make the correct choice or they lose
 
 
 ## Design
-The colors I have chosen are once again in line with my personal minimalistic preference.
+The colors I have chosen are once again in line with my personal minimalistic preference, and keeping in line with the Bop IT Branding colours.
 
-Background:
-Font: 
+#### Light Mode
+Background: White
+Font: Purple
+
+#### Dark Mode
+Background - Black 
+Font - Yellow
+Navigatin items , text etc white
 
 
 #### Typography
-The typography used throughout the site was specifically chosen as I felt it was a playful yet readable font.
+The typography used throughout the site was specifically chosen as I felt it was a playful yet readable font, again tying in with the 
 
 
 #### Images and Media
@@ -63,6 +67,7 @@ The images used for this project have been taken from the below sites:
 
 
 ## Citations
+I drew inspiration heavily from the love Maths project completed as part of the course. I used this as almost a template or boiler plate for structural purposes.
 
 `python3 -m http.server`
 
@@ -72,7 +77,9 @@ Github
 
 https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page
 
-Thank you for my mentor!
+Thank you to my wonderful mentor Martina, for her excellent and helpful insight.
+
+Thank you to Kasia Bogucka the cohort leader for her kind nature and dedication to ensure we all success at our 
 
 ------
 
@@ -103,5 +110,5 @@ anything that I have been unable to implement
 anything that 
 
 #### Lessons Learned
-
+Keep it simple- define a basic scope and stick to it to avoid scope creep.
 

@@ -1,0 +1,21 @@
+/* section for the rules*/
+#rules {
+visibility:none;
+Background:RGBA(0,0,0,0.8)
+}
+
+/* dark theme toggle*/
+#toggle-button{
+width: 20%;
+heigth: 20%;
+}
+
+body {
+ 
+    padding:20%;
+    margin-top:20px;
+    background-color: white;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

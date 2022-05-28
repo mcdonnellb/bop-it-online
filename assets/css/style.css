@@ -1,21 +1,67 @@
 /* section for the rules*/
 #rules {
-visibility:none;
+display:none;
 Background:RGBA(0,0,0,0.8)
 }
 
 /* dark theme toggle*/
-#toggle-button{
+submit {
 width: 20%;
 heigth: 20%;
 }
 
 body {
- 
+    flex-wrap: wrap;
     padding:20%;
     margin-top:20px;
-    background-color: white;
+    background-color: rgba(208, 216, 218, 0.808);
     color:black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+
+#game-title {
+
+    background-color: black;
+    color:white;
+    text-shadow: 1em;
+
+}
+
+#bop-it{
+    position:absolute;
+    height:200px;
+    width:200px;
+    background-color:white;
+}
+
+.game-container{
+    box-sizing: content-box; 
+    display:flex;
+    justify-content: space-evenly;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+    
+}
+
+#twist-it{
+    flex-basis:  wrap;
+    height:200px;
+    width:200px;
+    background-color:white;
+}
+
+
+#flick-it{
+    height:200px;
+    width:200px;
+    background-color:white;
+}
+
+#pull-it{
+    height:200px;
+    width:200px;
+    background-color:white;
+    align-self: flex-start;
 }

@@ -29,39 +29,49 @@ body {
 }
 
 #bop-it{
-    position:absolute;
     height:200px;
     width:200px;
+    border-radius:50%;
     background-color:white;
 }
 
-.game-container{
+#game-container{
+    
+    height: 400px;
     box-sizing: content-box; 
     display:flex;
+    flex-flow: wrap-reverse;
     justify-content: space-evenly;
     gap: 10px 20px; /* row-gap column gap */
     row-gap: 10px;
     column-gap: 20px;
-    
+    color:black;
 }
 
 #twist-it{
-    flex-basis:  wrap;
     height:200px;
     width:200px;
     background-color:white;
+    border-radius:50%;
 }
 
 
 #flick-it{
     height:200px;
     width:200px;
+    border-radius:50%;
     background-color:white;
 }
 
 #pull-it{
     height:200px;
     width:200px;
+    border-radius:50%;
     background-color:white;
-    align-self: flex-start;
+}
+#spin-it{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    background-color:white;
 }

@@ -29,19 +29,18 @@ body {
 }
 
 #bop-it{
-    height:200px;
-    width:200px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align:center;
 }
 #game-container{
-    
+    margin=top:100px;
     height: 400px;
     box-sizing: content-box; 
     display:flex;
     flex-flow: wrap-reverse;
-    
     justify-content: center;
     gap: 10px 20px; /* row-gap column gap */
     row-gap: 10px;
@@ -50,8 +49,8 @@ body {
 }
 
 #twist-it{
-    height:200px;
-    width:200px;
+    height:100px;
+    width:100px;
     background-color:white;
     border-radius:50%;
     text-align: center;
@@ -59,23 +58,23 @@ body {
 
 
 #flick-it{
-    height:200px;
-    width:200px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align: center;
 }
 
 #pull-it{
-    height:200px;
-    width:200px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align: center;
 }
 #spin-it{
-    height:200px;
-    width:200px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align: center;

@@ -33,16 +33,15 @@ body {
     width:200px;
     border-radius:50%;
     background-color:white;
-j   ustify-content: space-around;
+    text-align:center;
 }
-
 #game-container{
     
     height: 400px;
     box-sizing: content-box; 
     display:flex;
     flex-flow: wrap-reverse;
-    justify-content: space-evenly;
+    
     justify-content: center;
     gap: 10px 20px; /* row-gap column gap */
     row-gap: 10px;
@@ -72,12 +71,12 @@ j   ustify-content: space-around;
     width:200px;
     border-radius:50%;
     background-color:white;
-   justify-content: auto;
+    text-align: center;
 }
 #spin-it{
     height:200px;
     width:200px;
     border-radius:50%;
     background-color:white;
-    text-align: justify;
+    text-align: center;
 }

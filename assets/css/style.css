@@ -77,9 +77,13 @@ body {
     background-color: black;
     color:white;
     font-size: xx-large;
-
 }
-
+#scoreboard {
+font-size: xx-large;
+float:right;
+right: 20px;
+position: absoulte;
+}
 #bop-it{
     height:100px;
     width:100px;
@@ -91,7 +95,7 @@ body {
     height: 400px;
     box-sizing: content-box; 
     display:flex;
-    flex-flow: wrap;
+    flex-flow: row-reverse;
     align-content: space-evenly;
     justify-content: center;
     gap: 10px 20px; /* row-gap column gap */
@@ -135,8 +139,14 @@ body {
 #startButton {
     color:darkmagenta;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 50px;
+    height: 30px;
     width: 100px;
     margin-bottom: 20px;
+
+}
+#username {
+height: 30px;
+width: 150px;
+margin-bottom: 20px;
 
 }

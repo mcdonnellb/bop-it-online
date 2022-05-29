@@ -81,7 +81,8 @@ body {
     height: 400px;
     box-sizing: content-box; 
     display:flex;
-    flex-flow: wrap-reverse;
+    flex-flow: wrap;
+    align-content: space-evenly;
     justify-content: center;
     gap: 10px 20px; /* row-gap column gap */
     row-gap: 10px;
@@ -120,4 +121,12 @@ body {
     border-radius:50%;
     background-color:white;
     text-align: center;
+}
+#startButton {
+    color:darkmagenta;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50px;
+    width: 100px;
+    margin-bottom: 20px;
+
 }

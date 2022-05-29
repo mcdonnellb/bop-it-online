@@ -14,7 +14,6 @@ document.getElementById('body').style.color = "white";
     
     let myVar= document.getElementById('sun');
     let lightModeBody = document.getElementById[0]('body');
-    light-mode-body.style.backgroundColor="red";
     light-mode-body.style.color;
   
    }

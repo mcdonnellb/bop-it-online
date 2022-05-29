@@ -26,6 +26,20 @@ The user had approximately 4/5 few seconds to make the correct choice or they lo
 * High score capture 
 * High score dahsboard on main page.
 
+
+## My iniital Brainstorm around this Project and idea flow:
+-User enters usernmae
+* Message appears - Hi " usernmae, please hit start to begin or click here to view the rules. 
+*Start Button - count down from 5
+ *Onclick the computer selects at random from Bop it, twist it, flick it pull it and plays the corresponding audio.
+* The user has 4 seconds to hit the corresponding button
+* If the user hits the wrong button - Game Over displays with the score
+* If the user makes the right choice it adds a point to the score and keeps looping until the user makes a wrong choice
+* After 10 correct selections, the user has 3 seconds to make the right selection
+* After 20 correct seclections, the user has 2 seconds
+* After 30 correct selections the user has 1 second.
+* If user achieves a high score it is saved to the Scoreboard with the username. 
+
 #### UX
 ##  External user’s goal:
 

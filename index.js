@@ -1,4 +1,16 @@
+/* setting variables for the game */
+var score;
+var gameControlArray =["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
+var bopIt;
+var twistIt;
+var flickIt;
+var pullIt;
+var spinIt;
+
+
+
 document.getElementsByClassName("fa-solid fa-moon").addEventListener("click", darkMode);
+
 
 function darkMode() {
     console.log('Dark Mode is Selected');

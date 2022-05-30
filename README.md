@@ -29,9 +29,9 @@ The user had approximately 4/5 few seconds to make the correct choice or they lo
 
 ## My iniital Brainstorm around this Project and idea flow:
 -User enters usernmae
-* Message appears - Hi " usernmae, please hit start to begin or click here to view the rules. 
-*Start Button - count down from 5
- *Onclick the computer selects at random from Bop it, twist it, flick it pull it and plays the corresponding audio.
+* Message appears - Hi usernmae, please hit start to begin or click here to view the rules. 
+* Start Button - count down from 5
+ * Onclick the computer selects at random from Bop it, twist it, flick it pull it and plays the corresponding audio.
 * The user has 4 seconds to hit the corresponding button
 * If the user hits the wrong button - Game Over displays with the score
 * If the user makes the right choice it adds a point to the score and keeps looping until the user makes a wrong choice
@@ -78,6 +78,10 @@ The typography used throughout the site was specifically chosen as I felt it was
 #### Images and Media
 The images used for this project have been taken from the below sites:
 
+
+The audio for the game was taken from the below website and was the audio from the original game created by Hasbro:
+
+https://www.sounds-resource.com/mobile/bopit/sound/23634/
 
 
 ## Citations

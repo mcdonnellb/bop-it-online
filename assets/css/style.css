@@ -72,6 +72,10 @@ body {
 
 }
 
+.dark-mode{
+background-color: black;
+color:white;
+}
 #game-title {
 
     background-color: black;

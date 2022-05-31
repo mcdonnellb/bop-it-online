@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
             <link rel="stylesheet" href="assets/css/style.css">
             <script src="https://kit.fontawesome.com/e41829fe90.js" crossorigin="anonymous"></script>
-     
+            <script src="index.js" type="text/JavaScript"></script>
+
             <title>Bop it Extreme Online</title>
     </head>
     <body>
         <header>
             <input type="checkbox" id="darkmode-toggle"
-            class="checkbox" onclick="darkMode()"/>
+            class="checkbox" onclick="myFunction()"/>
     <label for="darkmode-toggle" class="toggle" onclick="darkMode()"> 
         <p>&nbsp&nbsp<i class="fa-solid fa-sun" id="sun"></i>  &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp <i class="fa-solid fa-moon" id="moon" onclick="darkMode()"></i></p>
     </label>
@@ -24,7 +25,6 @@
  
         <input type="text" name="username" id="username" placeholder="Enter Your Username">
         <button type="submit" id="startButton"> Start Game</button>
-        <button type="submit" onclick="myFunction()"> Dark Mode</button>
         <button id="click_me">Next random</button>
             <container id="">
             <div id ="">
@@ -69,6 +69,6 @@
             
         </container>
             <footer></footer>
-            <script src="script.js"></script>
+        
         </body>
 </html>

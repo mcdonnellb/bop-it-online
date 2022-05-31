@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
             <link rel="stylesheet" href="assets/css/style.css">
             <script src="https://kit.fontawesome.com/e41829fe90.js" crossorigin="anonymous"></script>
+     
             <title>Bop it Extreme Online</title>
     </head>
     <body>
         <header>
             <input type="checkbox" id="darkmode-toggle"
-            class="checkbox" onclick="myFunction()"/>
-    <label for="darkmode-toggle" class="toggle" onclick="myFunction()"> 
+            class="checkbox" onclick="darkMode()"/>
+    <label for="darkmode-toggle" class="toggle" onclick="darkMode()"> 
         <p>&nbsp&nbsp<i class="fa-solid fa-sun" id="sun"></i>  &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp <i class="fa-solid fa-moon" id="moon" onclick="myFunction()"></i></p>
     </label>
             <div id="game-title"><h1>Bop It Extreme Online</h1>
@@ -22,7 +23,9 @@
        
  
         <input type="text" name="username" id="username" placeholder="Enter Your Username">
-        <button type="submit" id="startButton" onclick="startGame()"> Start Game</button>
+        <button type="submit" id="startButton"> Start Game</button>
+        <button type="submit" onclick="darkMode()"> Dark Mode</button>
+        <button id="click_me">Next random</button>
             <container id="">
             <div id ="">
                 <p>xWelcome to bop it extreme online! Click here to see the rules or on the Start button to start a new game. Please enter your username & we will keep track of your high score for you.
@@ -36,8 +39,10 @@
             
 
         </container>
-
+        <progress value="0" max="10" id="progressBar"></progress>
+        <div id="countdown"></div>
         <container id="game-container">
+            
             <div id="scoreboard">Your Score:</div>
             <div id='twist-it'>
                 <h4>TWIST IT</h4>
@@ -64,5 +69,6 @@
             
         </container>
             <footer></footer>
-    </body>
+            <script src="script.js"></script>
+        </body>
 </html>

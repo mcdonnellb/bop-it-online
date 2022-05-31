@@ -58,7 +58,7 @@ p {
     
 }
        
-/* Checkbox vanished */
+/* hide the physical Checkbox*/
 .checkbox {
     display : none;
 }

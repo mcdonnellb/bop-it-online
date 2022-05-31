@@ -1,6 +1,5 @@
 /* setting variables for the game */
 var score;
-var gameControlArray =["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
 var bopIt;
 var twistIt;
 var flickIt;
@@ -23,29 +22,76 @@ audio[4] = "assets/audio/Flick";
 
 
 
-
-/* document.getElementsByClassName("fa-solid fa-moon").addEventListener("click", darkMode);
-*/
 /*
+document.getElementsByClassName("fa-solid fa-moon").addEventListener("click", darkMode);
+/*/
 function darkMode() {
-    console.log('Dark Mode is Selected');
-document.getElementById('body').style.color = "white";
- document.getElementById("body").style.backgroundcolor = "black";
+    var element = document.body;
+    element.classList.toggle("dark-mode");
  
+ return('Dark Mode is Selected');
+
       }
-  */
-      let var element = document.body;
+  
+  /*/    
       function myFunction() {
     
         element.classList.toggle("dark-mode");
       }
 
-   function lightMode() {
-    
-    let myVar= document.getElementById('sun');
-    let lightModeBody = document.getElementById[0]('body');
 
+   
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
   
-   }
-   
-   
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
+  
+  var items = ["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
+
+  var index = Infinity;
+  
+  function start() {
+    console.log("----- shuffling -----")
+    shuffle(items);
+    index = 0;
+  }
+  
+  function nextItem() {
+    if (index >= items.length) {
+      //re-start
+      start()
+    }
+    
+    //return current index and increment
+    return items[index++];
+  }
+  
+  document.getElementById("click_me")
+    .addEventListener("click", function() {
+      console.log(nextItem())
+      return(nextItem())
+    })
+
+
+
+    var first = document.getElementById("username");
+
+function welcome(){
+
+    var welcomeF = "Welcome" + firstß;
+    return welcomeF;
+
+}
+
+console.log(welcome());

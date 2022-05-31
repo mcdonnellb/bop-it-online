@@ -22,21 +22,15 @@ audio[4] = "assets/audio/Flick";
 
 
 
-/*
-document.getElementsByClassName("fa-solid fa-moon").addEventListener("click", darkMode);
-/*/
+
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
- print ('Dark Mode is Selected');
+ return ('Dark Mode is Selected');
 
       }
   
-  /*/    
-      function myFunction() {
-    
-        element.classList.toggle("dark-mode");
-      }
+  
 
 
    
@@ -76,7 +70,7 @@ function shuffle(array) {
     return items[index++];
   }
   
-  document.getElementById("click_me")
+  document.getElementById("click-me")
     .addEventListener("click", function() {
       console.log(nextItem())
       return(nextItem())
@@ -88,9 +82,13 @@ function shuffle(array) {
 
 function welcome(){
 
-    var welcomeF = "Welcome" + firstß;
+    var welcomeF = "Welcome" + first;
     return welcomeF;
 
 }
 
-console.log(welcome());*/
+newFunction();
+
+function newFunction() {
+    console.log(welcome());
+}

@@ -25,11 +25,10 @@ audio[4] = "assets/audio/Flick";
 /*
 document.getElementsByClassName("fa-solid fa-moon").addEventListener("click", darkMode);
 /*/
-function darkMode() {
+function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
- 
- return('Dark Mode is Selected');
+ print ('Dark Mode is Selected');
 
       }
   
@@ -94,4 +93,4 @@ function welcome(){
 
 }
 
-console.log(welcome());
+console.log(welcome());*/

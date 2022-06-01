@@ -95,7 +95,7 @@ Github
 
 https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page
 
-Thank you to my wonderful mentor Martina, for her excellent and helpful insight.
+Thank you to my wonderful mentor Martina, for her excellent and helpful insight. My focus from the outset was to ensure I hit the pass criteria, and Martina helped break this down for me into easier to manage chunks, without which i\ would have essentially allowed the scope to creep into a non plausable for delivery territory.
 
 Thank you to Kasia Bogucka the cohort leader for her kind nature and dedication to ensure we all success at our 
 

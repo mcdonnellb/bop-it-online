@@ -6,6 +6,7 @@ var score;
 //var pullIt;
 //var spinIt;
 var items = ["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
+var randomItems = items[Math.floor(Math.random()* items.length)];
 
 
 var bopItButton = document.getElementById("bop-it");
@@ -54,8 +55,9 @@ return ('Dark Mode is Selected');
     startButton.addEventListener("click", startGame);
 
       function startGame() {
-        document.getElementById("computer-instructions").innerHTML="<h4>Welcome to Bop IT</h4>";
-        
+      //  document.getElementById("computer-instructions").innerHTML="<h4>Welcome to Bop IT</h4>";
+    
+      document.getElementById("computer-instructions").innerHTML= randomItems;
       }
 
       alert("Yeah!" );
@@ -68,7 +70,7 @@ return ('Dark Mode is Selected');
   
   
   function bopItClicked(){
-alert ("You clicked bop itgggg");
+alert ("You clicked bop it");
 audio1.play();
 
   }

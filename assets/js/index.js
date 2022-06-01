@@ -7,6 +7,17 @@ var pullIt;
 var spinIt;
 var items = ["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
 
+var bopItButton = document.getElementById("bop-it");
+bopItButton.addEventListener("click", bopItClicked);
+var twistItButton = document.getElementById("twist-it");
+bopItButton.addEventListener("click", twistItClicked);
+var flickItButton = document.getElementById("flick-it");
+bopItButton.addEventListener("click", flickClicked);
+var pullItButton = document.getElementById("pull-it");
+bopItButton.addEventListener("click", pullItClicked);
+var spinItButton = document.getElementById("spin-it");
+bopItButton.addEventListener("click", spinItClicked);
+
 /*Setting up the Audio variables for the game*/
 var audio = [];
 audio[0] = new Audio();

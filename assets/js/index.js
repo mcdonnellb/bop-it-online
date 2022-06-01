@@ -57,13 +57,15 @@ return ('Dark Mode is Selected');
       function startGame() {
       //  document.getElementById("computer-instructions").innerHTML="<h4>Welcome to Bop IT</h4>";
     
-      document.getElementById("computer-instructions").innerHTML= randomItems;
+    
+      document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
       }
 
       alert("Yeah!" );
 
       // function for the Buttons - need to play the corresponding sound when each button is hit 
 
+    
   
  
   

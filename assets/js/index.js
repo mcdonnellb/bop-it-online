@@ -1,17 +1,15 @@
 /* setting variables for the game */
-var score;
-//var bopIt;
-//var twistIt;
-//var flickIt;
-//var pullIt;
-//var spinIt;
+var score = 0;
+
 var items = ["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
 var randomItems = items[Math.floor(Math.random()* items.length)];
 
 
 var bopItButton = document.getElementById("bop-it");
 bopItButton.addEventListener("click", bopItClicked);
-//var twistItButton = document.getElementById("twist-it");
+
+twistItButton = document.getElementById("twist-it");
+twistItButton.addEventListener("click", twistItClicked);
 //bopItButton.addEventListener("click", twistItClicked);
 //var flickItButton = document.getElementById("flick-it");
 //bopItButton.addEventListener("click", flickClicked);
@@ -22,12 +20,19 @@ bopItButton.addEventListener("click", bopItClicked);
 
 /*Setting up the Audio variables for the game*/
 
-var audio1 = new Audio();
-audio1.src = "assets/audio/Bop.wav";
-//audio[1] = new Audio();
-//audio[1].src = "assets/audio/Twist.wav";
-//audio[2] = new Audio();
-//audio[2].src = "assets/audio/Spin.wav";
+//Array of audio files
+
+var audioFiles= ['Pull.wav', 'Flick.wav', 'Spin.wav'];
+
+var bopItAudio = new Audio();
+bopItAudio.src = "assets/audio/Bop.wav";
+
+//var twistItAudio = new Audio();
+//twistItAudio.src = "assets/audio/Twist.wav";
+//var spin-it-audio = new Audio();
+//spin-it-audio.src = "assets/audio/Spin.wav";
+
+
 //audio[3] = new Audio();
 //audio[3] = "assets/audio/Pull.wav";
 //audio[4] = new Audio();
@@ -49,35 +54,45 @@ return ('Dark Mode is Selected');
 
 
       // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
-      
-
     var startButton = document.getElementById("startButton");
     startButton.addEventListener("click", startGame);
 
       function startGame() {
-      //  document.getElementById("computer-instructions").innerHTML="<h4>Welcome to Bop IT</h4>";
-    
-    
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
-      }
+  
+var number = Math.floor(Math.random() * 2 );
+var score = document.getElementById("scoreboard");
 
+if (number > 0) {
+  var audio = new Audio();
+  audio.src= "assets/audio/Bop.wav";
+  audio.play();
+  score ++;
+} else if (number > 2) {
+
+  var audio = new Audio();
+   audio.src = "assets/audio/Twist.wav";
+  audio.play();
+}
+      }
       alert("Yeah!" );
 
       // function for the Buttons - need to play the corresponding sound when each button is hit 
 
-    
-  
- 
-  
   
   
   function bopItClicked(){
 alert ("You clicked bop it");
-audio1.play();
+bopItAudio.play();
 
   }
 
- 
+  function twistItClicked(){
+    alert ("You clicked twist it");
+    audioFiles.play();
+  
+    
+      }
 
  
 

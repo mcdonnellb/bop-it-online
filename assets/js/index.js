@@ -22,10 +22,12 @@ twistItButton.addEventListener("click", twistItClicked);
 
 //Array of audio files
 
-var audioFiles= ['Pull.wav', 'Flick.wav', 'Spin.wav'];
-
+var audioFiles= (['Pull.wav', 'Flick.wav', 'Spin.wav']);
+var randomAudio = Math.floor * (Math.random * audioFiles)  
 var bopItAudio = new Audio();
 bopItAudio.src = "assets/audio/Bop.wav";
+randomAudio.src= (["assets/audio/Bop.wav","assets/audio/Flick.wav","assets/audio/Twist.wav"]);
+playRandom = Math.floor * (Math.random * randomAudio.src);
 
 //var twistItAudio = new Audio();
 //twistItAudio.src = "assets/audio/Twist.wav";
@@ -59,21 +61,13 @@ return ('Dark Mode is Selected');
 
       function startGame() {
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
+      playRandom.play();
+      score ++;
   
 var number = Math.floor(Math.random() * 2 );
 var score = document.getElementById("scoreboard");
 
-if (number > 0) {
-  var audio = new Audio();
-  audio.src= "assets/audio/Bop.wav";
-  audio.play();
-  score ++;
-} else if (number > 2) {
 
-  var audio = new Audio();
-   audio.src = "assets/audio/Twist.wav";
-  audio.play();
-}
       }
       alert("Yeah!" );
 

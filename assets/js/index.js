@@ -48,7 +48,6 @@ darkmodeToggle.addEventListener("click", myFunction);
 function myFunction() {
 var element = document.body;
 element.classList.toggle("dark-mode");
-return ('Dark Mode is Selected');
 
       }
     
@@ -60,12 +59,14 @@ return ('Dark Mode is Selected');
     startButton.addEventListener("click", startGame);
 
       function startGame() {
+      var score = document.getElementById("scoreboard");
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
       playRandom.play();
       score ++;
+      document.getElementById("scoreboard").innerHTML= "Computer Says:" + randomItems;
   
 var number = Math.floor(Math.random() * 2 );
-var score = document.getElementById("scoreboard");
+
 
 
       }

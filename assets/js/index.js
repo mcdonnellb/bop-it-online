@@ -1,5 +1,5 @@
 /* setting variables for the game */
-var score = 0;
+var score;
 
 var items = ["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
 var randomItems = items[Math.floor(Math.random()* items.length)];
@@ -59,17 +59,30 @@ element.classList.toggle("dark-mode");
     startButton.addEventListener("click", startGame);
 
       function startGame() {
-      var score = document.getElementById("scoreboard");
+      var scoreBoard = document.getElementById("scoreboard");
+
+      
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
-      playRandom.play();
-      score ++;
-      document.getElementById("scoreboard").innerHTML= "Computer Says:" + randomItems;
   
-var number = Math.floor(Math.random() * 2 );
+      let score = 0;
+      // need to define function here while game is in play / button selection matches random item then add to the score
+     //  while (true) {
+       // score +=1;
+//
+     //  }
+
+   //  while (false) {
+  //  document.getElementById("computer-instructions").innerHTML= "Game Over- Your score is" +score;
+      // 
+//
+    //  }
+      score.update();
+      score.innerHTML= "Computer Says:" + myGameArea.frameNo;
+  
+
+    }
 
 
-
-      }
       alert("Yeah!" );
 
       // function for the Buttons - need to play the corresponding sound when each button is hit 

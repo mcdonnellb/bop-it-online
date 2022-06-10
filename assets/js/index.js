@@ -60,7 +60,9 @@ element.classList.toggle("dark-mode");
 
       function startGame() {
       var scoreBoard = document.getElementById("scoreboard");
-
+      var name =document.getElementById("name");
+      scoreBoard.innerHTML=("Your Score is ");
+      document.getElementById("name").innerHTML =name.value +"'/s GAme ";
       
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
   
@@ -77,8 +79,13 @@ element.classList.toggle("dark-mode");
 //
     //  }
       score.update();
-      score.innerHTML= "Computer Says:" + myGameArea.frameNo;
-  
+      doucment.getElmentbyId(scoreBoard).innerHTML= "Computer Says:" + myGameArea.frameNo;
+      if (score == "1") {
+        document.getElementById("scoreboard").innerHTML = "You got one point!";
+      } else {
+        attempts--;
+        document.getElementById("result").innerHTML = "Wrong password, You Have " + attempts + " Tries Left!";
+      }
 
     }
 

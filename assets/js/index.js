@@ -59,8 +59,7 @@ element.classList.toggle("dark-mode");
     startButton.addEventListener("click", startGame);
 
       function startGame() {
-      var scoreBoard = document.getElementById("scoreboard");
-     // document.getElementById("scoreBoard").innerHTML= "Computer Says:" + randomItems;    
+      var scoreBoard = document.getElementById("scoreboard");  
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
   
 
@@ -85,10 +84,14 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
     function nameEntered(event) {
     event.preventDefault();
 let namePlate = document.getElementById("name");
-document.getElementById("gamename").innerHTML= "This is Yout Time to Shine " + namePlate.value;
+document.getElementById("gamename").innerHTML= "This is Your Time to Shine " + namePlate.value;
     }
 
-      alert("Yeah!" );
+      //alert("Yeah!" );
+
+
+
+
 
       // function for the Buttons - need to play the corresponding sound when each button is hit 
 

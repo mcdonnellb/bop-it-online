@@ -163,5 +163,21 @@ margin-bottom: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
      }
+#gamename {
+ bottom:200px;
+ color:white;
+ font-size: large;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+align-items: center;
+position:fixed;
+    }
+    #computer-instructions {
+        
+        color:white;
+        font-size: xx-large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       align-items: center;
+       position: absolute;
+       bottom:20px;
 
-    
+    }

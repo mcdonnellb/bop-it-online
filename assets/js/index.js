@@ -80,13 +80,12 @@ element.classList.toggle("dark-mode");
     
 
     }
-doucment.getElementById("user-details").addEventListener("submit", nameEntered);
+document.getElementById("user-details").addEventListener("submit", nameEntered);
 
     function nameEntered(event) {
     event.preventDefault();
 let namePlate = document.getElementById("name");
-//let nameUpdate =document.getElementById("gamename").innerHTML= namePlate.value ;
-document.getElementById("gamename").innerHTML= "This is Your Game" + namePlate.value;
+document.getElementById("gamename").innerHTML= "This is Yout Time to Shine " + namePlate.value;
     }
 
       alert("Yeah!" );

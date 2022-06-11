@@ -60,12 +60,10 @@ element.classList.toggle("dark-mode");
 
       function startGame() {
       var scoreBoard = document.getElementById("scoreboard");
-      var name =document.getElementById("name");
-      scoreBoard.innerHTML=("Your Score is ");
-      document.getElementById("name").innerHTML =name.value +"'/s GAme ";
-      
+     // document.getElementById("scoreBoard").innerHTML= "Computer Says:" + randomItems;    
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
   
+
       let score = 0;
       // need to define function here while game is in play / button selection matches random item then add to the score
      //  while (true) {
@@ -78,17 +76,18 @@ element.classList.toggle("dark-mode");
       // 
 //
     //  }
-      score.update();
-      doucment.getElmentbyId(scoreBoard).innerHTML= "Computer Says:" + myGameArea.frameNo;
-      if (score == "1") {
-        document.getElementById("scoreboard").innerHTML = "You got one point!";
-      } else {
-        attempts--;
-        document.getElementById("result").innerHTML = "Wrong password, You Have " + attempts + " Tries Left!";
-      }
+      
+    
 
     }
+doucment.getElementById("user-details").addEventListener("submit", nameEntered);
 
+    function nameEntered(event) {
+    event.preventDefault();
+let namePlate = document.getElementById("name");
+//let nameUpdate =document.getElementById("gamename").innerHTML= namePlate.value ;
+document.getElementById("gamename").innerHTML= "This is Your Game" + namePlate.value;
+    }
 
       alert("Yeah!" );
 
@@ -113,3 +112,11 @@ bopItAudio.play();
 
 
 
+// section to deal with the rules screen & visibilty 
+document.getElementById("show-rules-section").addEventListener("click", showRules);
+
+function showRules() {
+  
+document.getElementById("show-rules-section").innerHTML ="The rules of the game are simple - keep up with the computers instructions";
+
+}

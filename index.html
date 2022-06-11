@@ -16,14 +16,17 @@
             class="checkbox"/>
     <label for="darkmode-toggle" class="toggle"> 
         <p>&nbsp&nbsp<i class="fa-solid fa-sun" id="sun"></i>  &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp <i class="fa-solid fa-moon" id="moon"></i></p>
-    </label>
+    </label></header>
+<form id ="user-details" method="POST" action="/thankyou/">
+    <input type="text" name ="name" id="name"></input>
+    <input type ="submit" id="name-submitted"></input></form>
             <div id="game-title"><h1>Bop It Extreme Online</h1>
             </div>
         <div id="welcome">
         <button type="submit" id="startButton"> Start Game</button>
             <container>
             <div>
-                <p>xWelcome to bop it extreme online! Click here to see the rules or on the Start button to start a new game. Please enter your username & we will keep track of your high score for you.
+                <p id="show-rules-section">Welcome to bop it extreme online! Click here to see the rules or on the Start button to start a new game. Please enter your username & we will keep track of your high score for you.
                 </p>
             </div>
 
@@ -37,6 +40,7 @@
         <container id="game-container">
             
             <div id="scoreboard">Your Score:</div>
+            <p id ="gamename"></p>
                 <button id="twist-it">
                 <h4>TWIST IT </h4>
                 <i class="fa-solid fa-map-pin"></i>
@@ -57,7 +61,7 @@
                 <i class="fa-solid fa-spinner"></i>
             </button>
         
-             <div id ="computer-instructions"> tessssst iwugh;ouwHOh <h4>Computer Says: </h4></div>
+             <div id ="computer-instructions"> </div>
         </container>
             <footer></footer>
             <script src="assets/js/index.js" type="text/javascript"></script>

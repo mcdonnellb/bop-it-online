@@ -63,22 +63,23 @@ element.classList.toggle("dark-mode");
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
   
 
-      let score = 0;
-      // need to define function here while game is in play / button selection matches random item then add to the score
-     //  while (true) {
-       // score +=1;
-//
-     //  }
+      var score =0;
 
-   //  while (false) {
-  //  document.getElementById("computer-instructions").innerHTML= "Game Over- Your score is" +score;
-      // 
-//
-    //  }
-      
-    
+     // while score >5 {
 
+      //  document.getElementById("taunt").innerHTML="COME ON YOU CAN DO BETTER";
+      //}
+
+      if (computerInstructions.value =="Bop It" && bopItButton.clicked== true) {
+
+        score +=1;
+
+        echo("WOOHOO FOR BOP IT");
+      } 
     }
+      // need to define function here while game is in play / button selection matches random item then add to the score
+    
+          
 document.getElementById("user-details").addEventListener("submit", nameEntered);
 
     function nameEntered(event) {

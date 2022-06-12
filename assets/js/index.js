@@ -1,7 +1,7 @@
 /* setting variables for the game */
 var score;
 
-var items = ["Bop It ","Twist It ","Flick It","Pull it","Spin It"];
+var items = ["bop-It ","twist-It ","flick-It","pull-it","spin-It"];
 var randomItems = items[Math.floor(Math.random()* items.length)];
 
 
@@ -55,21 +55,9 @@ element.classList.toggle("dark-mode");
       // choose the computer instruction from the Array
      let computerInstructions= document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
   
-     // while score >5 {
-
-      //  document.getElementById("gamename").innerHTML="COME ON YOU CAN DO BETTER" + namePlate;
-      //}
-     let buttontostring = body.addEventListener("click");
-    let userSelection = button-to-string.value;
-      if (computerInstructions.innerHTML ==  userSelection) {
-
-        score +=1;
-echo(score);
-        echo("WOOHOO FOR BOP IT");
-      } 
-    }
+     
     
-      // need to define function here while game is in play / button selection matches random item then add to the score
+      }
     
    //This is for the user to input their name it will add a message for them to the screen//       
 document.getElementById("user-details").addEventListener("submit", nameEntered);
@@ -91,6 +79,19 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
   
   
   function bopItClicked(){
+
+    // need to get the id of the button and compare it to the inner html of the computer instructions
+    // if this is a match - need to add to score, if it's not a macth- end game / 
+    
+    clickedBopIT = this.id;
+alert (clickedBopIT); 
+    //  if ( computerInstructions contains clickedBopIT) {
+    //  score +=1;
+      //echo(score);
+    //} else {
+
+      //echo("GAME OVER");
+   // }
 alert ("You clicked bop it");
 bopItAudio.play();
 

@@ -105,32 +105,36 @@ float:left;
     background-color: rgb(24, 46, 0);
 }
 #twist-it{
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     background-color:white;
     border-radius:50%;
     text-align: center;
+    font-size: xx-large;
 }
 #flick-it{
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     border-radius:50%;
     background-color:white;
     text-align: center;
+    font-size:xx-large;
 }
 #pull-it{
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     border-radius:50%;
     background-color:white;
     text-align: center;
+    font-size: xx-large;
 }
 #spin-it{
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     border-radius:50%;
     background-color:white;
     text-align: center;
+    font-size: xx-large;
 }
 #startButton {
     color:darkmagenta;

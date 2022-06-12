@@ -29,20 +29,9 @@ bopItAudio.src = "assets/audio/Bop.wav";
 randomAudio.src= (["assets/audio/Bop.wav","assets/audio/Flick.wav","assets/audio/Twist.wav"]);
 playRandom = Math.floor * (Math.random * randomAudio.src);
 
-//var twistItAudio = new Audio();
-//twistItAudio.src = "assets/audio/Twist.wav";
-//var spin-it-audio = new Audio();
-//spin-it-audio.src = "assets/audio/Spin.wav";
 
 
-//audio[3] = new Audio();
-//audio[3] = "assets/audio/Pull.wav";
-//audio[4] = new Audio();
-//audio[4] = "assets/audio/Flick";
-//workspace/bop-it-online/assets/audio/Spin.wav
-
-
-/* setting the dark mode function on the click off the moon*/
+/* setting the dark mode function on the click of the moon*/
 var darkmodeToggle = document.getElementById("darkmode-toggle");
 darkmodeToggle.addEventListener("click", myFunction);
 function myFunction() {
@@ -54,12 +43,15 @@ element.classList.toggle("dark-mode");
 
 
 
-      // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
+    // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
     var startButton = document.getElementById("startButton");
     startButton.addEventListener("click", startGame);
 
       function startGame() {
       var scoreBoard = document.getElementById("scoreboard");  
+      //set the Scoreboard value to 0 
+      document.getElementById('scoreBoard').innerHTML='Your Score is 0';
+      // choose the computer instruction from the Array
       document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
   
 
@@ -69,10 +61,10 @@ element.classList.toggle("dark-mode");
 
       //  document.getElementById("taunt").innerHTML="COME ON YOU CAN DO BETTER";
       //}
+      let userSelection = canvas.addEventListener();
+      if (computer-instructions.value ==  userSelection) {
 
-      if (computerInstructions.value =="Bop It" && bopItButton.clicked== true) {
-
-        score +=1;
+        score.value +=1;
 
         echo("WOOHOO FOR BOP IT");
       } 

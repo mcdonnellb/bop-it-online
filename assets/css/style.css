@@ -84,8 +84,19 @@ color:white;
 #scoreboard {
 font-size: xx-large;
 float:right;
-right: 20px;
 position: absoulte;
+width:25%;
+height: 280px;
+}
+#game-variables{
+height: 10%;
+width:80%;
+background-color: aqua;
+}
+#user-name{
+width:50%;
+height: 280px;
+float:left;
 }
 #bop-it{
     height:100px;
@@ -96,6 +107,7 @@ position: absoulte;
 }
 #game-container{
     height: 400px;
+    width: 80%;
     box-sizing: content-box; 
     display:flex;
     flex-flow: row-reverse;
@@ -155,20 +167,13 @@ margin-bottom: 20px;
 }
 
 
-#gamename{
-
-    color:white;
-    font-size: large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-     }
 #gamename {
  bottom:200px;
  color:white;
  font-size: large;
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 align-items: center;
-position:fixed;
+position:absolute;
     }
     #computer-instructions {
         
@@ -176,7 +181,18 @@ position:fixed;
         font-size: xx-large;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
        align-items: center;
-       position: absolute;
        bottom:20px;
+
+    }
+
+    #timer {
+float:left;
+width: 25%;
+height: 280px;
+
+    }
+
+    *{
+      font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     }

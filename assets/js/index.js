@@ -50,24 +50,21 @@ element.classList.toggle("dark-mode");
 
       function startGame() {
       var scoreBoard = document.getElementById("scoreboard");  
-      //set the Scoreboard value to 0 
-      document.getElementById('scoreBoard').innerHTML='Your Score is 0';
-      // choose the computer instruction from the Array
-      document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
-  
-
       var score =0;
-
+  
+      // choose the computer instruction from the Array
+     let computerInstructions= document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
+  
      // while score >5 {
 
       //  document.getElementById("gamename").innerHTML="COME ON YOU CAN DO BETTER" + namePlate;
       //}
      let buttontostring = body.addEventListener("click");
     let userSelection = button-to-string.value;
-      if (computerinstructions.innerHTML ==  userSelection) {
+      if (computerInstructions.innerHTML ==  userSelection) {
 
-        score.value +=1;
-
+        score +=1;
+echo(score);
         echo("WOOHOO FOR BOP IT");
       } 
     }

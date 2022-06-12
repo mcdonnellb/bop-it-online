@@ -46,6 +46,7 @@ element.classList.toggle("dark-mode");
     // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
     var startButton = document.getElementById("startButton");
     startButton.addEventListener("click", startGame);
+    computerInstructions = document.getElementById('computer-instructions').value;
 
       function startGame() {
       var scoreBoard = document.getElementById("scoreboard");  
@@ -63,7 +64,7 @@ element.classList.toggle("dark-mode");
       //}
      let buttontostring = body.addEventListener("click");
     let userSelection = button-to-string.value;
-      if (computer-instructions.innerHTML ==  userSelection) {
+      if (computerinstructions.innerHTML ==  userSelection) {
 
         score.value +=1;
 

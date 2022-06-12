@@ -1,18 +1,12 @@
 /* section for the top controls*/
 #username {
 float:left;
-
 }
-
-
-
-
 /* section for the rules*/
 #rules {
 display:none;
 Background:RGBA(0,0,0,0.8)
 }
-
 /* dark theme toggle*/
 /* toggle in label designing */
 .toggle {
@@ -23,9 +17,7 @@ Background:RGBA(0,0,0,0.8)
     background-color: purple;
     border-radius: 30px;
     border: 2px solid gray;
-    
 }
-       
 /* After slide changes */
 .toggle:after {
     content: '';
@@ -44,7 +36,6 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-       
 /* Checkbox checked effect */
 .checkbox:checked + .toggle::after {
     left : 49px;
@@ -54,9 +45,7 @@ p {
 .checkbox:checked + .toggle {
     background-color: black;
     color:white;
-    
 }
-       
 /* hide the physical Checkbox*/
 .checkbox {
     display : none;
@@ -68,15 +57,12 @@ body {
     background-color: rgba(208, 216, 218, 0.808);
     color:black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
-
 .dark-mode {
-background-color: black;
-color:white;
+    background-color: black;
+    color:white;
 }
 #game-title {
-
     background-color: black;
     color:white;
     font-size: xx-large;
@@ -89,7 +75,6 @@ width:25%;
 height: 280px;
 }
 #game-variables{
-height: 10%;
 width:80%;
 background-color: aqua;
 }
@@ -106,7 +91,6 @@ float:left;
     text-align:center;
 }
 #game-container{
-    height: 400px;
     width: 80%;
     box-sizing: content-box; 
     display:flex;
@@ -119,7 +103,6 @@ float:left;
     color:darkmagenta;
     background-color: rgb(24, 46, 0);
 }
-
 #twist-it{
     height:100px;
     width:100px;
@@ -127,8 +110,6 @@ float:left;
     border-radius:50%;
     text-align: center;
 }
-
-
 #flick-it{
     height:100px;
     width:100px;
@@ -136,7 +117,6 @@ float:left;
     background-color:white;
     text-align: center;
 }
-
 #pull-it{
     height:100px;
     width:100px;
@@ -157,40 +137,32 @@ float:left;
     height: 30px;
     width: 100px;
     margin-bottom: 20px;
-
 }
 #username {
-height: 30px;
-width: 150px;
-margin-bottom: 20px;
-
+    height: 30px;
+    width: 150px;
+    margin-bottom: 20px;
 }
-
-
 #gamename {
- bottom:200px;
- color:white;
- font-size: large;
- font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-align-items: center;
-position:absolute;
-    }
+    bottom:200px;
+    color:white;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    position:absolute;
+}
     #computer-instructions {
-        
         color:white;
         font-size: xx-large;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-       align-items: center;
-       bottom:20px;
-
+        align-items: center;
+        bottom:20px;
     }
-
     #timer {
-float:left;
-width: 25%;
-height: 280px;
-
-    }
+        float:left;
+        width: 25%;
+        height: 280px;
+}
 
     *{
       font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

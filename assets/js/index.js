@@ -1,7 +1,10 @@
 /* setting variables for the game */
-var score;
+var score = 0 ;
 
-var items = ["bop-It ","twist-It ","flick-It","pull-it","spin-It"];
+//var items = ["bop-It","twist-It","flick-It","pull-it","spin-It"];
+//just leaving the bop it instruction in the array for now for testing purposes
+var items = ["bop-it", "twist-it"];
+
 var randomItems = items[Math.floor(Math.random()* items.length)];
 
 
@@ -53,7 +56,7 @@ element.classList.toggle("dark-mode");
       var score =0;
   
       // choose the computer instruction from the Array
-     let computerInstructions= document.getElementById("computer-instructions").innerHTML= "Computer Says:" + randomItems;
+     let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
   
      
     
@@ -68,7 +71,6 @@ let namePlate = document.getElementById("name");
 document.getElementById("game-title").innerHTML= "This is Your Time to Shine " + namePlate.value +  " playing Bop It Extreme Online";
     }
 
-      //alert("Yeah!" );
 
 
 
@@ -84,7 +86,25 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
     // if this is a match - need to add to score, if it's not a macth- end game / 
     
     clickedBopIT = this.id;
-alert (clickedBopIT); 
+// returning the id of the button now need to compare this to the inner html of the computer instructions
+// if they match add 1 to the score and update the scoreboard.
+
+    ci = document.getElementById("computer-instructions").innerHTML;
+    // comparing button clicked to the computer instruction
+    alert(ci);
+    alert(clickedBopIT);
+    if (ci == clickedBopIT){
+score +=1;
+alert(score);
+alert("YOU GOT ANOTHER POINT WOOHOO")
+doucument.getElementByID("score-board").innerHTML= score;
+
+
+    } else {
+      alert('GAME OVER- You lose!!');
+    }
+
+
     //  if ( computerInstructions contains clickedBopIT) {
     //  score +=1;
       //echo(score);

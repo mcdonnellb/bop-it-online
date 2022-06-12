@@ -84,11 +84,12 @@ height: 280px;
 float:left;
 }
 #bop-it{
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     border-radius:50%;
     background-color:white;
     text-align:center;
+    font-size: x-large;
 }
 #game-container{
     width: 80%;

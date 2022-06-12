@@ -77,7 +77,7 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
     function nameEntered(event) {
     event.preventDefault();
 let namePlate = document.getElementById("name");
-document.getElementById("gamename").innerHTML= "This is Your Time to Shine " + namePlate.value;
+document.getElementById("game-title").innerHTML= "This is Your Time to Shine " + namePlate.value +  " playing Bop It Extreme Online";
     }
 
       //alert("Yeah!" );

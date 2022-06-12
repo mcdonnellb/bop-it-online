@@ -61,8 +61,8 @@ element.classList.toggle("dark-mode");
 
       //  document.getElementById("gamename").innerHTML="COME ON YOU CAN DO BETTER" + namePlate;
       //}
-      let button-to-string =[];
-      let userSelection = document.getElementById()
+     let buttontostring = body.addEventListener("click");
+    let userSelection = button-to-string.value;
       if (computer-instructions.innerHTML ==  userSelection) {
 
         score.value +=1;
@@ -70,6 +70,7 @@ element.classList.toggle("dark-mode");
         echo("WOOHOO FOR BOP IT");
       } 
     }
+    
       // need to define function here while game is in play / button selection matches random item then add to the score
     
    //This is for the user to input their name it will add a message for them to the screen//       

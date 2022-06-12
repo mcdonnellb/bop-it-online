@@ -59,10 +59,11 @@ element.classList.toggle("dark-mode");
 
      // while score >5 {
 
-      //  document.getElementById("taunt").innerHTML="COME ON YOU CAN DO BETTER";
+      //  document.getElementById("gamename").innerHTML="COME ON YOU CAN DO BETTER" + namePlate;
       //}
-      let userSelection = canvas.addEventListener('click');
-      if (computer-instructions.value ==  userSelection) {
+      let button-to-string =[];
+      let userSelection = document.getElementById()
+      if (computer-instructions.innerHTML ==  userSelection) {
 
         score.value +=1;
 
@@ -71,7 +72,7 @@ element.classList.toggle("dark-mode");
     }
       // need to define function here while game is in play / button selection matches random item then add to the score
     
-   //This is for the user to input thier name it will add a message for them to the screen//       
+   //This is for the user to input their name it will add a message for them to the screen//       
 document.getElementById("user-details").addEventListener("submit", nameEntered);
 
     function nameEntered(event) {

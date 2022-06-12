@@ -116,3 +116,14 @@ function showRules() {
 document.getElementById("show-rules-section").innerHTML ="The rules of the game are simple - keep up with the computers instructions";
 
 }
+
+// function for the timer- counts down from 4 seconds 
+// this needs to be tied in with the start game funtion so that when the random selection form the array is returned, the user has 4 seconds to choose the correct button or the end game screen is displayed
+var timeleft = 4;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+  }
+  document.getElementById("progressBar").value = 4 - timeleft;
+  timeleft -= 1;
+}, 1000);

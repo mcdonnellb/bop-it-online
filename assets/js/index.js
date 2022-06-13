@@ -52,24 +52,23 @@ element.classList.toggle("dark-mode");
     var startButton = document.getElementById("startButton");
     startButton.addEventListener("click", startGame);
 
-      function startGame() {
+  function startGame() {
       var scoreBoard = document.getElementById("scoreboard");  
       var score =0;
   
       // choose the computer instruction from the Array
      let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-  
-var timeleft = 4;
-var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    clearInterval(downloadTimer);
+     var timeleft = 4;
+     var downloadTimer = setInterval(function(){
+     if(timeleft <= 0){
+     clearInterval(downloadTimer);
     //alert("GAME OVER- TOO SLOW BRO" +score);
   }
-  document.getElementById("progressBar").value = 4 - timeleft;
-  timeleft -= 1;
-}, 1000);
+    document.getElementById("progressBar").value = 4 - timeleft;
+    timeleft -= 1;
+    }, 1000);
     
-      }
+}
     
    //This is for the user to input their name it will add a message for them to the screen//       
 document.getElementById("user-details").addEventListener("submit", nameEntered);

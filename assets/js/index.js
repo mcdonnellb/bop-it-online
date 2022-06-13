@@ -1,8 +1,9 @@
 /* setting variables for the game */
 var score = 0 ;
+var scoreboard = document.getElementByID("scoreboard").innerHTML= score;
 
 //var items = ["bop-It","twist-It","flick-It","pull-it","spin-It"];
-//just leaving the bop it instruction in the array for now for testing purposes
+//just leaving the bop it and twist it instruction in the array for now for testing purposes
 var items = ["bop-it", "twist-it"];
 
 var randomItems = items[Math.floor(Math.random()* items.length)];
@@ -24,7 +25,7 @@ twistItButton.addEventListener("click", twistItClicked);
 
 /*Setting up the Audio variables for the game*/
 
-//Array of audio files
+//Array of audio files - these are not working and will likely be removed before submission
 
 var audioFiles= (['Pull.wav', 'Flick.wav', 'Spin.wav']);
 var randomAudio = Math.floor * (Math.random * audioFiles)  
@@ -58,7 +59,7 @@ element.classList.toggle("dark-mode");
       // choose the computer instruction from the Array
      let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
   
-     var timeleft = 4;
+var timeleft = 4;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
@@ -99,14 +100,21 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
 
   ci = document.getElementById("computer-instructions").innerHTML;
     // comparing button clicked to the computer instruction
-    alert(ci);
-    alert(clickedBopIT);
+   // alert(ci);
+   // alert(clickedBopIT);
     if (ci == clickedBopIT){
 score +=1;
-clearInterval(downloadTimer);
+resetInterval(downloadTimer);
+//clearInterval(downloadTimer);
+document.getElementById("progressBar").value = 4 - timeleft;
+  timeleft -= 1;
+
+    
+      
+
 alert(score);
 alert("YOU GOT ANOTHER POINT WOOHOO")
-doucument.getElementByID("score-board").innerHTML= score;
+document.getElementById('scoreboard').innerHTML = gamename +"Score" + score;
 
 
     } else {
@@ -137,7 +145,7 @@ bopItAudio.play();
       alert(score);
       document.getElementById('scoreboard').innerHTML = score;
       alert("YOU GOT ANOTHER POINT WOOHOO");
-      doucument.getElementByID("scoreboard").value= score;
+      doucument.getElementByID("scoreboard").value= gamename + score;
       document.getElementById("progressBar").value = 4 - timeleft;
       timeleft -= 1;
  

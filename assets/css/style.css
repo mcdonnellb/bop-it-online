@@ -178,9 +178,8 @@ float:left;
        /* the footer contains all of the social media links and will be on each html page*/
    /* the footer contains all of the social media links and will be on each html page*/
    footer {
-    height: 5%;
+    height: 20%;
     width:100%;
-    display: flex;
     justify-content: space-around; 
     justify-content: center;
 }
@@ -220,7 +219,7 @@ align-items: center;
     background: #3B5998;
     color: white;
     font-size: 70%;
-    height:5%;
+    height:25%;
     text-transform: uppercase;
     text-align: center;
 }

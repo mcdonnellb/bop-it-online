@@ -100,18 +100,13 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
 
   ci = document.getElementById("computer-instructions").innerHTML;
     // comparing button clicked to the computer instruction
-   // alert(ci);
-   // alert(clickedBopIT);
-    if (ci == clickedBopIT){
+   alert(ci);
+   alert(clickedBopIT);
+if (ci == clickedBopIT){
 score +=1;
-resetInterval(downloadTimer);
 //clearInterval(downloadTimer);
 document.getElementById("progressBar").value = 4 - timeleft;
-  timeleft -= 1;
-
-    
-      
-
+timeleft -= 1;
 alert(score);
 alert("YOU GOT ANOTHER POINT WOOHOO")
 document.getElementById('scoreboard').innerHTML = gamename +"Score" + score;
@@ -122,13 +117,6 @@ document.getElementById('scoreboard').innerHTML = gamename +"Score" + score;
     }
 
 
-    //  if ( computerInstructions contains clickedBopIT) {
-    //  score +=1;
-      //echo(score);
-    //} else {
-
-      //echo("GAME OVER");
-   // }
 alert ("You clicked bop it");
 bopItAudio.play();
 
@@ -147,7 +135,7 @@ bopItAudio.play();
       alert("YOU GOT ANOTHER POINT WOOHOO");
       doucument.getElementByID("scoreboard").value= gamename + score;
       document.getElementById("progressBar").value = 4 - timeleft;
-      timeleft -= 1;
+      timeleft += 3;
  
       
       

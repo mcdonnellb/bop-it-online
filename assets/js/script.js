@@ -14,15 +14,15 @@ let ci= document.getElementById("computer-instructions").innerHTML;
 // setting the button variables 
 
 const bopItButton = document.getElementById("bop-it");
-bopItButton.addEventListener("click", bopItClicked);
+bopItButton.addEventListener("click", buttonClicked);
 const twistItButton = document.getElementById("twist-it");
-twistItButton.addEventListener("click", twistItClicked);
+twistItButton.addEventListener("click", buttonClicked);
 //const flickItButton = document.getElementById("flick-it");
-//bopItButton.addEventListener("click", flickClicked);
+//bopItButton.addEventListener("click", buttonClicked);
 //const pullItButton = document.getElementById("pull-it");
-//bopItButton.addEventListener("click", pullItClicked);
+//bopItButton.addEventListener("click", buttonClicked);
 //const spinItButton = document.getElementById("spin-it");
-//bopItButton.addEventListener("click", spinItClicked);
+//bopItButton.addEventListener("click", buttonClicked);
 
 /*Setting up the Audio variables for the game*/
 var bopItAudio = new Audio();
@@ -40,8 +40,11 @@ startButton.addEventListener("click", startGame);
 
 function startGame() {
           let score =0;
+          let maxScore = 10;
           var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
           let usern= document.getElementById("user-name").innerHTML = namePlate.value;
+          this.taskDelay=1000; 
+       
          // choose the computer instruction from the Array
         // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
         generateComputerInstructions();
@@ -56,48 +59,36 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
             document.getElementById("user-name").innerHTML= namePlate.value;
     }
 // function for the Buttons - need to play the corresponding sound when each button is hit 
-function bopItClicked(){
+//function bopItClicked(){
 // need to get the id of the button and compare it to the inner html of the computer instructions
-          clickedBopIT = this.id;
+  //        clickedBopIT = this.id;
           // score = document.getElementById('scoreboard').innerHTML;
-           ci = document.getElementById("computer-instructions").innerHTML;
-           if (ci == clickedBopIT){
-             score +=1;
-             alert(score);
-            // console.log(score);
-            document.getElementById('scoreboard').innerHTML = score;
-             //alert("YOU GOT ANOTHER POINT WOOHOO");
-             console.log('you got another point WOOHOO');
-                 } else {
-                   console.log('GAME OVER- You lose!!' +score);
-                 }
+    //       ci = document.getElementById("computer-instructions").innerHTML;
+      //     if (ci == clickedBopIT){
+        //     score +=1;
+          //  document.getElementById('scoreboard').innerHTML = score;
+            //console.log('you got another point WOOHOO');
+            //generateComputerInstructions();
+              //   } else {
+                //   console.log('GAME OVER- You lose!!' +score);
+          
+               
+//
+  //               }
        
-             }
-       
-
-
-//alert ("You clicked bop it");
-bopItAudio.play();
-
- 
-
-  function twistItClicked(){
-    clickedTwistIT = this.id;
-   // score = document.getElementById('scoreboard').innerHTML;
-    ci = document.getElementById("computer-instructions").innerHTML;
-    if (ci == clickedTwistIT){
-      score +=1;
-      alert(score);
-     // console.log(score);
-     document.getElementById('scoreboard').innerHTML = score;
-      //alert("YOU GOT ANOTHER POINT WOOHOO");
-      console.log('you got another point WOOHOO');
-
- 
-      
-      
+    //         }
+function buttonClicked(){
+         clickedButton = this.id;
+         ci = document.getElementById("computer-instructions").innerHTML;
+              if (ci == clickedButton){
+                score +=1;
+          document.getElementById('scoreboard').innerHTML = score;
+          
+            console.log('you got another point WOOHOO');
+            generateComputerInstructions();
           } else {
             console.log('GAME OVER- You lose!!' +score);
+            document.getElementById('scoreboard').innerHTML ="Game over home girl" +namePlate +'Your score' +score;
           }
 
       }
@@ -115,9 +106,11 @@ function showRules() {
 // function to deal with generating the random selection from the array
 
 function generateComputerInstructions() {
-        for (let i = 0; i < 5; i++) {
-        //text += "The number is " + i + "<br>";
+  let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
+        for (let i = 0; i < items.length; i++) {
+       
         let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
+        return(randomItems);
 }
 }
 

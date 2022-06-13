@@ -76,7 +76,9 @@ height: 280px;
 }
 #game-variables{
 width:80%;
-background-color: aqua;
+height: 200px;
+display:block;
+background-color: greenyellow;
 }
 #user-name{
 width:50%;
@@ -161,12 +163,15 @@ float:left;
         font-size: xx-large;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         align-items: center;
-        bottom:20px;
+        margin-top: 160px;
+        position:absolute;
+        text-align: center;
     }
     #timer {
         float:left;
         width: 25%;
         height: 280px;
+        accent-color: red;
 }
 
     *{
@@ -187,6 +192,7 @@ float:left;
     text-align:center;
     position:relative;
     display:block;
+    height: 200px;
 
   }
   .social-networks > li {
@@ -260,4 +266,11 @@ align-items: center;
 }
 .fa-github:hover {
     color:gray;
+}
+
+
+.fa-solid  {
+    position:relative;
+    margin:1%;
+    border:2px;
 }

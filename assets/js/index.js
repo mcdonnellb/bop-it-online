@@ -1,6 +1,6 @@
 /* setting variables for the game */
 var score = 0 ;
-var scoreboard = document.getElementByID("scoreboard").innerHTML= score;
+//var scoreboard = document.getElementByID("scoreboard").innerHTML= score;
 
 //var items = ["bop-It","twist-It","flick-It","pull-it","spin-It"];
 //just leaving the bop it and twist it instruction in the array for now for testing purposes

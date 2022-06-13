@@ -57,28 +57,29 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
     }
 // function for the Buttons - need to play the corresponding sound when each button is hit 
 function bopItClicked(){
-
-    // need to get the id of the button and compare it to the inner html of the computer instructions
+// need to get the id of the button and compare it to the inner html of the computer instructions
           clickedBopIT = this.id;
-          let ci = document.getElementById("computer-instructions").innerHTML;
-          if (ci == clickedBopIT){
-          score = document.getElementById('scoreboard').innerHTML.value;
-          score +=1;
-          console.log(score);
-          console.log('You got another point WOOHOO');
-          generateComputerInstructions();
-
-
-                } else {
-              //    alert('GAME OVER- You lose!!');
-              console.log('Game over-you lose!');
-}
+          // score = document.getElementById('scoreboard').innerHTML;
+           ci = document.getElementById("computer-instructions").innerHTML;
+           if (ci == clickedBopIT){
+             score +=1;
+             alert(score);
+            // console.log(score);
+            document.getElementById('scoreboard').innerHTML = score;
+             //alert("YOU GOT ANOTHER POINT WOOHOO");
+             console.log('you got another point WOOHOO');
+                 } else {
+                   console.log('GAME OVER- You lose!!' +score);
+                 }
+       
+             }
+       
 
 
 //alert ("You clicked bop it");
 bopItAudio.play();
 
-  }
+ 
 
   function twistItClicked(){
     clickedTwistIT = this.id;

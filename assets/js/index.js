@@ -6,6 +6,7 @@ var score = 0 ;
 var items = ["bop-it", "twist-it"];
 
 var randomItems = items[Math.floor(Math.random()* items.length)];
+var ci= document.getElementById("computer-instructions").innerHTML;
 
 
 var bopItButton = document.getElementById("bop-it");
@@ -49,7 +50,6 @@ element.classList.toggle("dark-mode");
     // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
     var startButton = document.getElementById("startButton");
     startButton.addEventListener("click", startGame);
-    computerInstructions = document.getElementById('computer-instructions').value;
 
       function startGame() {
       var scoreBoard = document.getElementById("scoreboard");  
@@ -58,7 +58,15 @@ element.classList.toggle("dark-mode");
       // choose the computer instruction from the Array
      let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
   
-     
+     var timeleft = 4;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    alert("GAME OVER- TOO SLOW BRO" +score);
+  }
+  document.getElementById("progressBar").value = 4 - timeleft;
+  timeleft -= 1;
+}, 1000);
     
       }
     
@@ -89,12 +97,13 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
 // returning the id of the button now need to compare this to the inner html of the computer instructions
 // if they match add 1 to the score and update the scoreboard.
 
-    ci = document.getElementById("computer-instructions").innerHTML;
+  ci = document.getElementById("computer-instructions").innerHTML;
     // comparing button clicked to the computer instruction
     alert(ci);
     alert(clickedBopIT);
     if (ci == clickedBopIT){
 score +=1;
+clearInterval(downloadTimer);
 alert(score);
 alert("YOU GOT ANOTHER POINT WOOHOO")
 doucument.getElementByID("score-board").innerHTML= score;
@@ -118,10 +127,26 @@ bopItAudio.play();
   }
 
   function twistItClicked(){
+    clickedTwistIT = this.id;
+    ci = document.getElementById("computer-instructions").innerHTML;
     alert ("You clicked twist it");
-    audioFiles.play();
-  
-    
+    alert(clickedTwistIT);
+
+    if (ci == clickedTwistIT){
+      score +=1;
+      alert(score);
+      document.getElementById('scoreboard').innerHTML = score;
+      alert("YOU GOT ANOTHER POINT WOOHOO");
+      doucument.getElementByID("scoreboard").value= score;
+      document.getElementById("progressBar").value = 4 - timeleft;
+      timeleft -= 1;
+ 
+      
+      
+          } else {
+            alert('GAME OVER- You lose!!' +score);
+          }
+
       }
 
  
@@ -139,11 +164,11 @@ document.getElementById("show-rules-section").innerHTML ="The rules of the game 
 
 // function for the timer- counts down from 4 seconds 
 // this needs to be tied in with the start game funtion so that when the random selection form the array is returned, the user has 4 seconds to choose the correct button or the end game screen is displayed
-var timeleft = 4;
-var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    clearInterval(downloadTimer);
-  }
-  document.getElementById("progressBar").value = 4 - timeleft;
-  timeleft -= 1;
-}, 1000);
+//var timeleft = 4;
+//var downloadTimer = setInterval(function(){
+  //if(timeleft <= 0){
+   // clearInterval(downloadTimer);
+  //}
+  //document.getElementById("progressBar").value = 4 - timeleft;
+  //timeleft -= 1;
+//}, 1000);

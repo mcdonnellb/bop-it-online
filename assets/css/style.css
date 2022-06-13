@@ -173,3 +173,92 @@ float:left;
       font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     }
+
+    /* This section will look after the footer section, I am adding a footer just to make this look a little more professional as it is quite basic at present*/
+       /* the footer contains all of the social media links and will be on each html page*/
+   /* the footer contains all of the social media links and will be on each html page*/
+   footer {
+    height: 5%;
+    width:100%;
+    display: flex;
+    justify-content: space-around; 
+    justify-content: center;
+}
+.social-networks {
+    text-align:center;
+    position:relative;
+    display:block;
+
+  }
+  .social-networks > li {
+      display:inline-block;
+  }
+.social-networks  i {
+    font-size:160%; 
+    margin:40%;
+    padding:15px;
+    color: #fffdfd;
+    bottom:20px;
+    justify-content: space-evenly; 
+
+ }
+
+
+ ul.social-networks {
+position:absolute;
+justify-content: space-evenly; 
+align-items: center;
+
+ }
+/*  hover effect for social sites- gray on hover common on all pages  */
+.fa:hover {
+    color:gray;
+}
+/* Setting a specific color for each social media site in the footer- common on all pages*/
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    font-size: 70%;
+    height:5%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.fa-facebook:hover {
+    color:gray;
+}
+.fa-linkedin {
+    background: #55ACEE;
+    color: white;
+    font-size: 70%;
+    height:5%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.fa-linkedin:hover {
+    color:gray;
+}
+.fa-instagram-square {
+    background:#bc2a8d;
+    color: white;
+    font-size: 70%;
+    height:5%;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.fa-instagram-square:hover {
+    color:gray;
+}
+.fa-github {
+    background: #030303;
+    color: white;
+    font-size: 70%;
+    height:5%;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.fa-github:hover {
+    color:gray;
+}

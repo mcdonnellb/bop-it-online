@@ -145,7 +145,7 @@ bopItAudio.play();
       
       
           } else {
-            alert('GAME OVER- You lose!!' +score);
+            console.log('GAME OVER- You lose!!' +score);
           }
 
       }

@@ -63,7 +63,7 @@ var timeleft = 4;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    alert("GAME OVER- TOO SLOW BRO" +score);
+    //alert("GAME OVER- TOO SLOW BRO" +score);
   }
   document.getElementById("progressBar").value = 4 - timeleft;
   timeleft -= 1;
@@ -100,24 +100,27 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
 
   ci = document.getElementById("computer-instructions").innerHTML;
     // comparing button clicked to the computer instruction
-   alert(ci);
-   alert(clickedBopIT);
+ //  alert(ci);
+  // alert(clickedBopIT);
 if (ci == clickedBopIT){
 score +=1;
 //clearInterval(downloadTimer);
 document.getElementById("progressBar").value = 4 - timeleft;
 timeleft -= 1;
-alert(score);
-alert("YOU GOT ANOTHER POINT WOOHOO")
+//alert(score);
+console.log(score);
+//alert("YOU GOT ANOTHER POINT WOOHOO")
+console.log('You got another point WOOHOO');
 document.getElementById('scoreboard').innerHTML = gamename +"Score" + score;
 
 
     } else {
-      alert('GAME OVER- You lose!!');
+  //    alert('GAME OVER- You lose!!');
+  console.log('Game over-you lose!);
     }
 
 
-alert ("You clicked bop it");
+//alert ("You clicked bop it");
 bopItAudio.play();
 
   }
@@ -125,14 +128,16 @@ bopItAudio.play();
   function twistItClicked(){
     clickedTwistIT = this.id;
     ci = document.getElementById("computer-instructions").innerHTML;
-    alert ("You clicked twist it");
-    alert(clickedTwistIT);
+  //  alert ("You clicked twist it");
+    //alert(clickedTwistIT);
 
     if (ci == clickedTwistIT){
       score +=1;
-      alert(score);
+      //alert(score);
+      console.log(score);
       document.getElementById('scoreboard').innerHTML = score;
-      alert("YOU GOT ANOTHER POINT WOOHOO");
+      //alert("YOU GOT ANOTHER POINT WOOHOO");
+      console.log('you got another point WOOHOO');
       doucument.getElementByID("scoreboard").value= gamename + score;
       document.getElementById("progressBar").value = 4 - timeleft;
       timeleft += 3;

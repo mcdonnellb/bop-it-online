@@ -8,7 +8,7 @@ const items = ["bop-it", "twist-it"];
 const namePlate = document.getElementById("name");
 
 
-const randomItems = items[Math.floor(Math.random()* items.length)];
+let randomItems = items[Math.floor(Math.random()* items.length)];
 let ci= document.getElementById("computer-instructions").innerHTML;
 
 
@@ -97,8 +97,7 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
     clickedBopIT = this.id;
 // returning the id of the button now need to compare this to the inner html of the computer instructions
 // if they match add 1 to the score and update the scoreboard.
-
-  ci = document.getElementById("computer-instructions").innerHTML;
+let ci = document.getElementById("computer-instructions").innerHTML;
     // comparing button clicked to the computer instruction
  //  alert(ci);
   // alert(clickedBopIT);
@@ -112,11 +111,14 @@ console.log(score);
 
 console.log('You got another point WOOHOO');
 let scoreBUpdate = document.getElementById('scoreboard').innerHTML = namePlate +"Score" + score;
+generateComputerInstructions();
 
 
     } else {
   //    alert('GAME OVER- You lose!!');
   console.log('Game over-you lose!');
+
+  // endGame
     }
 
 
@@ -135,7 +137,7 @@ bopItAudio.play();
       document.getElementById('scoreboard').innerHTML = score;
       //alert("YOU GOT ANOTHER POINT WOOHOO");
       console.log('you got another point WOOHOO');
-      document.getElementByID("scoreboard").value= namePlate+ score;
+      //document.getElementByID("scoreboard").value= namePlate+ score;
       document.getElementById("progressBar").value = 4 - timeleft;
       timeleft += 3;
  
@@ -177,6 +179,6 @@ var downloadTimer = setInterval(function(){
 
 function generateComputerInstructions() {
   let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-  return comupterInstructions;
+  return computerInstructions;
 
 }

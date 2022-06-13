@@ -17,12 +17,12 @@ const bopItButton = document.getElementById("bop-it");
 bopItButton.addEventListener("click", buttonClicked);
 const twistItButton = document.getElementById("twist-it");
 twistItButton.addEventListener("click", buttonClicked);
-//const flickItButton = document.getElementById("flick-it");
-//bopItButton.addEventListener("click", buttonClicked);
-//const pullItButton = document.getElementById("pull-it");
-//bopItButton.addEventListener("click", buttonClicked);
-//const spinItButton = document.getElementById("spin-it");
-//bopItButton.addEventListener("click", buttonClicked);
+const flickItButton = document.getElementById("flick-it");
+bopItButton.addEventListener("click", buttonClicked);
+const pullItButton = document.getElementById("pull-it");
+bopItButton.addEventListener("click", buttonClicked);
+const spinItButton = document.getElementById("spin-it");
+bopItButton.addEventListener("click", buttonClicked);
 
 /*Setting up the Audio variables for the game*/
 var bopItAudio = new Audio();
@@ -66,12 +66,10 @@ function buttonClicked(){
               if (ci == clickedButton){
                 score +=1;
           document.getElementById('scoreboard').innerHTML = score;
-          
-            console.log('you got another point WOOHOO');
-            generateComputerInstructions();
+          console.log('you got another point WOOHOO');
+          generateComputerInstructions();
           } else {
-            console.log('GAME OVER- You lose!!' +score);
-            document.getElementById('scoreboard').innerHTML ="Game over home girl" +namePlate +'Your score' +score;
+          document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'Your score = ' +score;
           }
 
       }
@@ -94,6 +92,7 @@ function generateComputerInstructions() {
        
         let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
         return(randomItems);
+        alert(randomItems[i]);
 }
 }
 

@@ -67,9 +67,13 @@ function buttonClicked(){
                 score +=1;
           document.getElementById('scoreboard').innerHTML = score;
           console.log('you got another point WOOHOO');
-          generateComputerInstructions();
+          //generateComputerInstructions();
           } else {
           document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'Your score = ' +score;
+          // need to add something to stop player being allowed to click on right button after game has ended eg game in play = false.
+          document.getElementById('game-container').visible=false;
+          canvas.preventDefault();
+          
           }
 
       }

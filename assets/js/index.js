@@ -1,28 +1,27 @@
 /* setting variables for the game */
 let score = 0 ;
+let i = 0;
 
 
 //const items = ["bop-It","twist-It","flick-It","pull-it","spin-It"];
 //just leaving the bop it and twist it instruction in the array for now for testing purposes
-const items = ["bop-it", "twist-it"];
+const items = ['bop-it', 'twist-it'];
 const namePlate = document.getElementById("name");
 
 
-let randomItems = items[Math.floor(Math.random()* items.length)];
+let randomItems = items[Math.floor(Math.random()*2)];
 let ci= document.getElementById("computer-instructions").innerHTML;
-
+// setting the button variables 
 
 const bopItButton = document.getElementById("bop-it");
 bopItButton.addEventListener("click", bopItClicked);
-
 const twistItButton = document.getElementById("twist-it");
 twistItButton.addEventListener("click", twistItClicked);
-//bopItButton.addEventListener("click", twistItClicked);
-//var flickItButton = document.getElementById("flick-it");
+//const flickItButton = document.getElementById("flick-it");
 //bopItButton.addEventListener("click", flickClicked);
-//var pullItButton = document.getElementById("pull-it");
+//const pullItButton = document.getElementById("pull-it");
 //bopItButton.addEventListener("click", pullItClicked);
-//var spinItButton = document.getElementById("spin-it");
+//const spinItButton = document.getElementById("spin-it");
 //bopItButton.addEventListener("click", spinItClicked);
 
 /*Setting up the Audio variables for the game*/
@@ -58,7 +57,7 @@ function startGame() {
   var score =0;
 
   // choose the computer instruction from the Array
- // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
+  let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
  generateComputerInstructions();
   var timeleft = 4;
   var downloadTimer = setInterval(function() {
@@ -178,7 +177,10 @@ var downloadTimer = setInterval(function(){
 // function to deal with generating the random selection from the array
 
 function generateComputerInstructions() {
-  let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-  return computerInstructions;
+let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
+
+//return randomItems;
+console.log(randomItems[i++]);
+
 
 }

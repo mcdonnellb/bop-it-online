@@ -116,7 +116,9 @@ Some of the critical errors found and the items used to overcome the errors
 Start Game funtion - initially I had the generate random computer instruction function within start game function.
 
 Start Game - would only generate item from array once, even if clicked on multiple times, you had to refresh the page then reclick and it may generate a different item.
-------
+
+#### Known Bugs
+* If you click on the welcome section it will update with the rules but this screen remains
 
 #### Items to be addressed in future iterations
 I honestly could have kept working on this for the next 3 months, it was such an enjoyable (albeit frusttrating at times) experience. 

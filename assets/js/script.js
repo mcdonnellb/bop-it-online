@@ -42,10 +42,7 @@ function startGame() {
           let score =0;
           var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
           let usern= document.getElementById("user-name").innerHTML = namePlate.value;
-
-        
-
-          // choose the computer instruction from the Array
+         // choose the computer instruction from the Array
         // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
         generateComputerInstructions();
         }
@@ -56,6 +53,7 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
     function nameEntered(event) {
             event.preventDefault();
             document.getElementById("game-title").innerHTML= "This is Your Time to Shine " + namePlate.value +  " playing Bop It Extreme Online";
+            document.getElementById("user-name").innerHTML= namePlate.value;
     }
 // function for the Buttons - need to play the corresponding sound when each button is hit 
 function bopItClicked(){

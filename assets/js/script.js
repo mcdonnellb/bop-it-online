@@ -1,5 +1,5 @@
 /* setting variables for the game */
-let score = 0 ;
+let score;
 let i = 0;
 
 
@@ -53,11 +53,12 @@ const startButton = document.getElementById("startButton");
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-  var scoreBoard = document.getElementById("scoreboard");  
-  var score =0;
+  let score =0;
+  var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
+ 
 
   // choose the computer instruction from the Array
-  let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
+ // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
  generateComputerInstructions();
   var timeleft = 4;
   var downloadTimer = setInterval(function() {
@@ -92,6 +93,8 @@ document.getElementById("game-title").innerHTML= "This is Your Time to Shine " +
 
     // need to get the id of the button and compare it to the inner html of the computer instructions
     // if this is a match - need to add to score, if it's not a macth- end game / 
+    let score;
+    var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
     
     clickedBopIT = this.id;
 // returning the id of the button now need to compare this to the inner html of the computer instructions
@@ -101,6 +104,7 @@ let ci = document.getElementById("computer-instructions").innerHTML;
  //  alert(ci);
   // alert(clickedBopIT);
 if (ci == clickedBopIT){
+ // score= document.getElementById('scoreboard').innerHTML.value;
 score +=1;
 //clearInterval(downloadTimer);
 document.getElementById("progressBar").value = 4 - timeleft;
@@ -109,13 +113,15 @@ timeleft -= 1;
 console.log(score);
 
 console.log('You got another point WOOHOO');
-let scoreBUpdate = document.getElementById('scoreboard').innerHTML = namePlate +"Score" + score;
+
 generateComputerInstructions();
 
 
     } else {
   //    alert('GAME OVER- You lose!!');
   console.log('Game over-you lose!');
+
+  // add taunt audio file here **
 
   // endGame
     }
@@ -132,8 +138,8 @@ bopItAudio.play();
     if (ci == clickedTwistIT){
       score +=1;
       //alert(score);
-      console.log(score);
-      document.getElementById('scoreboard').innerHTML = score;
+     // console.log(score);
+     // document.getElementById('scoreboard').innerHTML = score.value;
       //alert("YOU GOT ANOTHER POINT WOOHOO");
       console.log('you got another point WOOHOO');
       //document.getElementByID("scoreboard").value= namePlate+ score;
@@ -179,8 +185,9 @@ var downloadTimer = setInterval(function(){
 function generateComputerInstructions() {
 let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
 
+
 //return randomItems;
-console.log(randomItems[i++]);
+//console.log(randomItems);
 
 
 }

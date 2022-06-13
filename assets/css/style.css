@@ -57,6 +57,7 @@ body {
     background-color: rgba(208, 216, 218, 0.808);
     color:black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
 }
 .dark-mode {
     background-color: black;

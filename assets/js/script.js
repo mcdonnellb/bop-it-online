@@ -5,7 +5,7 @@ var score = 0;
 
 //const items = ["bop-It","twist-It","flick-It","pull-it","spin-It"];
 //just leaving the bop it and twist it instruction in the array for now for testing purposes
-const items = ['bop-it', 'twist-it'];
+let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
 const namePlate = document.getElementById("name");
 
 
@@ -18,11 +18,11 @@ bopItButton.addEventListener("click", buttonClicked);
 const twistItButton = document.getElementById("twist-it");
 twistItButton.addEventListener("click", buttonClicked);
 const flickItButton = document.getElementById("flick-it");
-bopItButton.addEventListener("click", buttonClicked);
+flickItButton.addEventListener("click", buttonClicked);
 const pullItButton = document.getElementById("pull-it");
-bopItButton.addEventListener("click", buttonClicked);
+pullItButton.addEventListener("click", buttonClicked);
 const spinItButton = document.getElementById("spin-it");
-bopItButton.addEventListener("click", buttonClicked);
+spinItButton.addEventListener("click", buttonClicked);
 
 /*Setting up the Audio variables for the game*/
 var bopItAudio = new Audio();
@@ -59,6 +59,12 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
             document.getElementById("user-name").innerHTML= namePlate.value;
     }
 
+    function gameOver(){
+clearInterval();
+event.preventDefault();
+
+    }
+
 
 function buttonClicked(){
          clickedButton = this.id;
@@ -72,7 +78,7 @@ function buttonClicked(){
           document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'Your score = ' +score;
           // need to add something to stop player being allowed to click on right button after game has ended eg game in play = false.
           document.getElementById('game-container').visible=false;
-          canvas.preventDefault();
+          gameOver();
           
           }
 

@@ -1,12 +1,12 @@
 /* setting variables for the game */
 var score = 0;
 //just leaving the bop it and twist it instruction in the array for now for testing purposes
-let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
+//let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
 const namePlate = document.getElementById("name");
 
 
-let randomItems = items[Math.floor(Math.random()*5 )];
-let ci= document.getElementById("computer-instructions").innerHTML;
+//let randomItems = items[Math.floor(Math.random()*5 )];
+//let ci= document.getElementById("computer-instructions").innerHTML;
 // setting the button variables 
 
 const bopItButton = document.getElementById("bop-it");

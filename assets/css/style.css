@@ -288,3 +288,8 @@ border-style: dotted;
 text-align:center;
 justify-items: center;
 }
+
+fa-solid fa-lightbulb {
+display:none;
+
+}

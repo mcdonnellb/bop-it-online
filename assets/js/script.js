@@ -1,9 +1,5 @@
 /* setting variables for the game */
 var score = 0;
-
-
-
-//const items = ["bop-It","twist-It","flick-It","pull-it","spin-It"];
 //just leaving the bop it and twist it instruction in the array for now for testing purposes
 let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
 const namePlate = document.getElementById("name");
@@ -66,7 +62,15 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
     }
 
     function gameOver(){
-return("THIS GAME IS OVER");
+          gameContainerHidden = document.getElementById('game-container');
+          gameVariablesScreenHidden = document.getElementById('game-variables');
+          gameContainerHidden.style.display = "none";
+          gameVariablesScreenHidden.style.display = "none";
+          endGameScreen = document.getElementById('end-game-screen');
+          endGameScreen.style.display ="block";
+          srs= document.getElementByID("show-rules-section");
+          srs.style.display="none";
+          return("THIS GAME IS OVER");
 
 //push the username and score into the highscore array which will be displayed on the end game screen.
 
@@ -87,12 +91,8 @@ function buttonClicked(){
         
           gameOver();
           
-          gameContainerHidden = document.getElementById('game-container');
-          gameVariablesScreenHidden = document.getElementById('game-variables');
-          gameContainerHidden.style.display = "none";
-          gameVariablesScreenHidden.style.display = "none";
-          endGameScreen = document.getElementById('end-game-screen');
-          endGameScreen.style.display ="block";
+          
+          
           }
 
       }

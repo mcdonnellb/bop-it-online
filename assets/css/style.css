@@ -285,5 +285,6 @@ align-items: center;
 display:none;
 font-size:xx-large ;
 border-style: dotted;
-box-shadow: violet;
+text-align:center;
+justify-items: center;
 }

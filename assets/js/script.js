@@ -9,7 +9,7 @@ let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
 const namePlate = document.getElementById("name");
 
 
-let randomItems = items[Math.floor(Math.random()* items.length)];
+let randomItems = items[Math.floor(Math.random()*5 )];
 let ci= document.getElementById("computer-instructions").innerHTML;
 // setting the button variables 
 
@@ -25,8 +25,8 @@ const spinItButton = document.getElementById("spin-it");
 spinItButton.addEventListener("click", buttonClicked);
 
 /*Setting up the Audio variables for the game*/
-var bopItAudio = new Audio();
-bopItAudio.src = "assets/audio/Bop.wav";
+//var bopItAudio = new Audio();
+//bopItAudio.src = "assets/audio/Bop.wav";
 /* setting the dark mode function on the click of the moon*/
 var darkmodeToggle = document.getElementById("darkmode-toggle");
 darkmodeToggle.addEventListener("click", myFunction);
@@ -39,16 +39,22 @@ const startButton = document.getElementById("startButton");
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-          let score =0;
-          let maxScore = 10;
+
+let ci= document.getElementById("computer-instructions").innerHTML;
+let score =0;
+let maxScore = 10;
           var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
           let usern= document.getElementById("user-name").innerHTML = namePlate.value;
           this.taskDelay=1000; 
-       
+generateComputerInstructions();
+            }
+            
+
          // choose the computer instruction from the Array
         // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-        generateComputerInstructions();
-        }
+       // generateComputerInstructions();
+        //}
+      
 
    //This is for the user to input their name it will add a message for them to the screen//       
 document.getElementById("user-details").addEventListener("submit", nameEntered);
@@ -60,8 +66,7 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
     }
 
     function gameOver(){
-clearInterval();
-event.preventDefault();
+return("THIS GAME IS OVER");
 
     }
 
@@ -73,13 +78,19 @@ function buttonClicked(){
                 score +=1;
           document.getElementById('scoreboard').innerHTML = score;
           console.log('you got another point WOOHOO');
-          //generateComputerInstructions();
+          generateComputerInstructions();
           } else {
           document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'Your score = ' +score;
           // need to add something to stop player being allowed to click on right button after game has ended eg game in play = false.
-          document.getElementById('game-container').visible=false;
+        
           gameOver();
           
+          gameContainerHidden = document.getElementById('game-container');
+          gameVariablesScreenHidden = document.getElementById('game-variables');
+          gameContainerHidden.style.display = "none";
+          gameVariablesScreenHidden.style.display = "none";
+          endGameScreen.style.display ="block";
+         
           }
 
       }
@@ -97,12 +108,11 @@ function showRules() {
 // function to deal with generating the random selection from the array
 
 function generateComputerInstructions() {
-  let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-        for (let i = 0; i < items.length; i++) {
-       
-        let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-        return(randomItems);
-        alert(randomItems[i]);
+let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
+let randomItems = items[Math.floor(Math.random()*5 )];
+ // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
+        for (let i = 0; i < 5; i++) {
+         let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
 }
 }
 

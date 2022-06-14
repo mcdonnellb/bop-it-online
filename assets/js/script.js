@@ -43,7 +43,7 @@ let maxScore = 10;
           let usern= document.getElementById("user-name").innerHTML = namePlate.value;
           this.taskDelay=1000; 
 generateComputerInstructions();
-            }
+ }
             
 
          // choose the computer instruction from the Array
@@ -57,7 +57,7 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
 
     function nameEntered(event) {
             event.preventDefault();
-            document.getElementById("game-title").innerHTML= "This is Your Time to Shine " + namePlate.value +  " playing Bop It Extreme Online";
+            document.getElementById("game-title").innerHTML= "This is Your Time to Shine " + namePlate.value;
             document.getElementById("user-name").innerHTML= namePlate.value;
     }
 
@@ -106,11 +106,11 @@ function reloadPage() {
 
 
 // section to deal with the rules screen & visibilty 
-document.getElementById("show-rules-section").addEventListener("click", showRules);
+//document.getElementById("show-rules-section").addEventListener("click", showRules);
 
-function showRules() {
-          document.getElementById("show-rules-section").innerHTML ="The rules of the game are simple - keep up with the computers instructions";
-}
+//function showRules() {
+  //        document.getElementById("show-rules-section").innerHTML ="The rules of the game are simple - keep up with the computers instructions";
+//}
 // function to deal with generating the random selection from the array
 
 function generateComputerInstructions() {

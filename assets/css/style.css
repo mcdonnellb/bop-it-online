@@ -52,6 +52,7 @@ p {
     display : none;
 }
 body {
+    display:flex;
     flex-wrap: wrap;
     padding:10%;
     margin-top:20px;
@@ -65,9 +66,12 @@ body {
     color:white;
 }
 #game-title {
+    top: 2px;
+    width:80%;
     background-color: black;
     color:white;
-    font-size: xx-large;
+    margin-left:10%;
+    font-family: cursive;
 }
 #scoreboard {
 font-size: 70%;
@@ -78,7 +82,7 @@ height: 280px;
 }
 #game-variables{
 width:80%;
-margin:10%;
+margin-left:10%;
 height: 200px;
 display:block;
 background-color: greenyellow;
@@ -88,9 +92,13 @@ width:50%;
 height: 280px;
 float:left;
 }
+#user-details{
+ margin-left:10%;
+ margin-top: 2px;   
+}
 #bop-it{
-    height:150px;
-    width:150px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align:center;
@@ -100,8 +108,6 @@ float:left;
     width: 80%;
     margin:10%;
     box-sizing: content-box; 
-    display:flex;
-    flex-flow: row-reverse;
     align-content: space-evenly;
     justify-content: center;
     gap: 10px 20px; /* row-gap column gap */
@@ -111,39 +117,38 @@ float:left;
     background-color: rgb(24, 46, 0);
 }
 #twist-it{
-    height:150px;
-    width:150px;
+    height:100px;
+    width:100px;
     background-color:white;
     border-radius:50%;
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
 }
 #flick-it{
-    height:150px;
-    width:150px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align: center;
-    font-size:xx-large;
+    font-size:x-large;
 }
 #pull-it{
-    height:150px;
-    width:150px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
 }
 #spin-it{
-    height:150px;
-    width:150px;
+    height:100px;
+    width:100px;
     border-radius:50%;
     background-color:white;
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
 }
 #startButton {
-    color:darkmagenta;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 30px;
     width: 100px;
@@ -154,6 +159,7 @@ float:left;
     width: 150px;
     margin-bottom: 20px;
     font-size: 70%;
+    margin:auto;
 }
 #gamename {
     bottom:200px;
@@ -180,7 +186,9 @@ float:left;
 }
 
     *{
-      font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      
+      font-family:  Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 
     }
 

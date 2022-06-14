@@ -28,7 +28,7 @@ let darkmodeToggle = document.getElementsByClassName("fa-solid fa-lightbulb");
 darkmodeToggle.addEventListener("click", myFunction);
 function myFunction() {
         var element = document.body;
-        element.classList.toggle("dark-mode");
+        element.idList.toggle("dark-mode");
 }
 // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
 const startButton = document.getElementById("startButton");

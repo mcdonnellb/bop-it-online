@@ -89,14 +89,16 @@ function buttonClicked(){
           gameVariablesScreenHidden = document.getElementById('game-variables');
           gameContainerHidden.style.display = "none";
           gameVariablesScreenHidden.style.display = "none";
+          endGameScreen = document.getElementById('end-game-screen');
           endGameScreen.style.display ="block";
-         
           }
 
       }
 
- 
-
+ document.getElementById('try-again').addEventListener("click", reloadPage());
+//function reloadPage() {
+  document. location. reload()
+}
 
 
 // section to deal with the rules screen & visibilty 

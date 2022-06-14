@@ -279,3 +279,11 @@ align-items: center;
     margin:1%;
     border:2px;
 }
+
+
+#end-game-screen{
+display:none;
+font-size:xx-large ;
+border-style: dotted;
+box-shadow: violet;
+}

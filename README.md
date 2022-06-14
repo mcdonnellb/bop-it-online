@@ -110,23 +110,30 @@ Tutor
 
 I used Tutor support for this project as I really struggled with some of my Javascript functions. The tutors, while not fixing or amending my code, were able to steer me back onto the right path by reiterating industry standards/ common practice in key areas I was clearly lacking.
 
+## Deployment
+As with the previous assessment I deployed this assignemnet through Gitpod and have really come to terms with the interface / using the terminal etc, which I initially had struggled with.
+
+My approach for this assessment was quite different. I broke the scope down into subsections, and while I will readily admit to losing a substantial amount of time working on non critical elements ( dark mode), I found it a lot easier to manage my time for this project.
+
+I deployed a Github page for this project very early which allowed me the opportunity to test this from my mobile at random.
+
+I also tried to keep the commits very specific to enable ease of reference ( so when I accidentally remove too much code for example it's easy for me to locate) but also to ensure I am getting used to that iterative process, focusing on the task at hand, commiting, then moving on to the next item on the list.
+
 ## Error Log 
 Some of the critical errors found and the items used to overcome the errors
 
-Start Game funtion - initially I had the generate random computer instruction function within start game function.
-
-Start Game - would only generate item from array once, even if clicked on multiple times, you had to refresh the page then reclick and it may generate a different item.
+Start Game funtion - initially I had the generate random computer instruction function within start game function and const variables set for the randomise function.
+Start Game would only generate item from array once, even if clicked on multiple times, you had to refresh the page then reclick and it may generate a different item. This was the longest standing problem and was the simplest to fix.
 
 #### Known Bugs
 * If you click on the welcome section it will update with the rules but this screen remains
 
 #### Items to be addressed in future iterations
-I honestly could have kept working on this for the next 3 months, it was such an enjoyable (albeit frusttrating at times) experience. 
 
-Items which I had intended to include ( after I let scope creep get the better of me)
+Items which I had intended to include ( after I let scope creep get the better of me) but would include in future development:
 
 * Include the audio files noted in the media section - this would ensure accessability to the use of the game for those who are visually impaired. This would include the generation of a random computer instruction, the taunts if you lose, and also the cheers if you get a high score.
-* High Score capture with a scoreboard on the main page.
+* High Score capture with a scoreboard on the  end game page
 * Difficulty selection - eg: array for easy with 3 instructions, array for medium with 5 instructions, array for hard with 5 instructions and timer varibale of 2 seconds.
 
 #### Lessons Learned

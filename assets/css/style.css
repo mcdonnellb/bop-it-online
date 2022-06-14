@@ -68,7 +68,7 @@ body {
 #game-title {
     top: 2px;
     width:80%;
-    background-color: black;
+    background-color:#2d3436;
     color:white;
     margin-left:10%;
     font-family: cursive;
@@ -85,7 +85,7 @@ width:80%;
 margin-left:10%;
 height: 200px;
 display:block;
-background-color: greenyellow;
+background-color: #74b9ff;
 }
 #user-name{
 width:50%;
@@ -118,7 +118,7 @@ width: 40%;
     row-gap: 10px;
     column-gap: 20px;
     color:darkmagenta;
-    background-color: rgb(24, 46, 0);
+    background-color: #74b9ff;
 }
 #twist-it{
     height:100px;

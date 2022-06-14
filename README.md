@@ -52,16 +52,20 @@ The user had approximately 4/5 few seconds to make the correct choice or they lo
 
 
 ## Design
-The colors I have chosen are once again in line with my personal minimalistic preference, and keeping in line with the Bop IT/ Hasbro  Branding colours.
+The colors I have chosen are once again in line with my personal minimalistic preference, but keeping in line with the Bop IT/ Hasbro  Branding colours.
+I am clearly not a graphic designer, so I tried to use some of the knowledge from the course content to ensure I follow key practices of UX design.
+
+One website I found really helpful for selecting the UI colours was the below:
+https://flatuicolors.com/palette/us
 
 #### Light Mode
 Background: White
 Font: Purple
 
 #### Dark Mode
-Background - Black 
-Font - Yellow
-Navigation items , text etc white
+Background - Dracula Orchid #2d3436
+font color - city lights #dfe6e9
+
 
 
 #### Typography

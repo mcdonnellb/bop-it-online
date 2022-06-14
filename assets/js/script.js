@@ -74,6 +74,8 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
 
 //push the username and score into the highscore array which will be displayed on the end game screen.
 
+//Game title update to say better luck next time @nameplate
+
     }
 
 

@@ -23,13 +23,13 @@ spinItButton.addEventListener("click", buttonClicked);
 /*Setting up the Audio variables for the game*/
 //var bopItAudio = new Audio();
 //bopItAudio.src = "assets/audio/Bop.wav";
-/* setting the dark mode function on the click of the moon*/
-//let darkmodeToggle = document.getElementsByClassName("fa-solid fa-lightbulb");
-//darkmodeToggle.addEventListener("click", myFunction);
-//function myFunction() {
-  //      var element = document.body;
-    //    element.idList.toggle("dark-mode");
-//}
+/* setting the dark mode function on the click of the moon - I read many a thread about dark mode main inspo taken from w3c schools*/
+let darkmodeToggle = document.getElementById("darkmode-toggle");
+darkmodeToggle.addEventListener("click", enableDarkmode);
+function enableDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+}
 // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
 const startButton = document.getElementById("startButton");
 startButton.addEventListener("click", startGame);
@@ -40,20 +40,11 @@ gamecontShown.style.display = "block";
 let ci= document.getElementById("computer-instructions").innerHTML;
 let score =0;
 let maxScore = 10;
-        //  var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
-          let usern= document.getElementById("user-name").innerHTML = namePlate.value;
-          this.taskDelay=1000; 
+let usern= document.getElementById("user-name").innerHTML = namePlate.value; 
 generateComputerInstructions();
  }
             
-
-         // choose the computer instruction from the Array
-        // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-       // generateComputerInstructions();
-        //}
-      
-
-   //This is for the user to input their name it will add a message for them to the screen//       
+   //This code is for the user to input their name it will add a message for them to the screen//       
 document.getElementById("user-details").addEventListener("submit", nameEntered);
 
     function nameEntered(event) {
@@ -69,8 +60,6 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
           gameVariablesScreenHidden.style.display = "none";
           endGameScreen = document.getElementById('end-game-screen');
           endGameScreen.style.display ="block";
-          //srs= document.getElementByID("show-rules-section");
-          //srs.style.display="none";
           ud = document.getElementById("user-details");
           ud.style.display="none";
           sb = document.getElementById("startButton");
@@ -79,8 +68,6 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
           gt.innerHTML= "Maybe next time  " +namePlate.value ; 
 
 //push the username and score into the highscore array which will be displayed on the end game screen.
-
-//Game title update to say better luck next time @nameplate
 
     }
 
@@ -95,24 +82,16 @@ function buttonClicked(){
           generateComputerInstructions();
           } else {
           document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'YOUR POINTS = ' +score;
-          // need to add something to stop player being allowed to click on right button after game has ended eg game in play = false.
-        
-          gameOver();
-          
-          
-          
+          gameOver(); 
           }
-
       }
 
- document.getElementById("try-again").addEventListener("click", reloadPage);
+document.getElementById("try-again").addEventListener("click", reloadPage);
 function reloadPage() {
-
   gos = document.getElementById("end-game-screen");
- gos.style.display="none";
-location.reload();
-return false;
-//document. location. reload()
+  gos.style.display="none";
+  location.reload();
+  return false;
 }
 
 

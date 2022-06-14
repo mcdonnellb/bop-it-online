@@ -35,7 +35,8 @@ const startButton = document.getElementById("startButton");
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-
+let gamecontShown = document.getElementById("game-container");
+gamecontShown.style.display = "block";
 let ci= document.getElementById("computer-instructions").innerHTML;
 let score =0;
 let maxScore = 10;
@@ -68,9 +69,14 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
           gameVariablesScreenHidden.style.display = "none";
           endGameScreen = document.getElementById('end-game-screen');
           endGameScreen.style.display ="block";
-          srs= document.getElementByID("show-rules-section");
-          srs.style.display="none";
-          return("THIS GAME IS OVER");
+          //srs= document.getElementByID("show-rules-section");
+          //srs.style.display="none";
+          ud = document.getElementById("user-details");
+          ud.style.display="none";
+          sb = document.getElementById("startButton");
+          sb.style.display ="none";
+          gt = document.getElementById("game-title");
+          gt.innerHTML= "Maybe next time  " +namePlate.value ; 
 
 //push the username and score into the highscore array which will be displayed on the end game screen.
 
@@ -99,9 +105,14 @@ function buttonClicked(){
 
       }
 
- document.getElementById('try-again').addEventListener("click", reloadPage());
+ document.getElementById("try-again").addEventListener("click", reloadPage);
 function reloadPage() {
-         //document. location. reload()
+
+  gos = document.getElementById("end-game-screen");
+ gos.style.display="none";
+location.reload();
+return false;
+//document. location. reload()
 }
 
 

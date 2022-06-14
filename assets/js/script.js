@@ -24,12 +24,12 @@ spinItButton.addEventListener("click", buttonClicked);
 //var bopItAudio = new Audio();
 //bopItAudio.src = "assets/audio/Bop.wav";
 /* setting the dark mode function on the click of the moon*/
-let darkmodeToggle = document.getElementsByClassName("fa-solid fa-lightbulb");
-darkmodeToggle.addEventListener("click", myFunction);
-function myFunction() {
-        var element = document.body;
-        element.idList.toggle("dark-mode");
-}
+//let darkmodeToggle = document.getElementsByClassName("fa-solid fa-lightbulb");
+//darkmodeToggle.addEventListener("click", myFunction);
+//function myFunction() {
+  //      var element = document.body;
+    //    element.idList.toggle("dark-mode");
+//}
 // Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
 const startButton = document.getElementById("startButton");
 startButton.addEventListener("click", startGame);

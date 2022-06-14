@@ -65,13 +65,23 @@ body {
     background-color: black;
     color:white;
 }
-#game-title {
-    top: 2px;
+.heading {
+  /*  top: 2px;
     width:80%;
     background-color:#2d3436;
     color:white;
     margin-left:10%;
-    font-family: 'cursive', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'cursive', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: #5e94b6;
+    font-family: "liberator";
+    font-size: 60px;
+    font-weight: normal;
+    margin: .5em auto;
+    text-transform: uppercase;
+    width: 420px;
+
+
+
 }
 #scoreboard {
 font-size: 70%;
@@ -309,6 +319,6 @@ display:none;
 }
 /* This is taken from and was not written by me. https://www.viget.com/articles/easy-textures-with-css-masks/ */
 .grit {
-    -webkit-mask-image: url("grit.png");
-    mask-image: url("grit.png");
+    -webkit-mask-image: url("/assets/images/files/grit.png");
+    mask-image: url("/assets/images/files/grit.png");
   }

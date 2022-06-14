@@ -24,7 +24,7 @@ spinItButton.addEventListener("click", buttonClicked);
 //var bopItAudio = new Audio();
 //bopItAudio.src = "assets/audio/Bop.wav";
 /* setting the dark mode function on the click of the moon*/
-var darkmodeToggle = document.getElementById("darkmode-toggle");
+var darkmodeToggle = document.getElementById("lightbulb-on");
 darkmodeToggle.addEventListener("click", myFunction);
 function myFunction() {
         var element = document.body;

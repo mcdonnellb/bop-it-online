@@ -5,11 +5,12 @@
 My idea for project 2 is for an interactive 'Bop-it' online game. To meet the project criteria, this needs to be an interactive site as well as incorporating user choice when it comes to the display of information, or to achieve their preferred goals.
 
 ## Technologies used:
-*HTML
-*CSS
-*JavaScript
+* HTML
+* CSS
+* JavaScript
+* Gitpod for deployment 
 
-Bop it was a game popularised in the 90's as a boredom beater, whereby the user would be guided by audio to selectand engage with one of the 5 choices below.
+Bop it was a hand held game created by Hasbro popularised in the 90's as a boredom beater, whereby the user would be guided by audio to selectand engage with one of the 5 choices below.
 
   Bop it
   Flick it
@@ -17,38 +18,43 @@ Bop it was a game popularised in the 90's as a boredom beater, whereby the user 
   Pull it
   Spin it 
 
-The user had approximately 4/5 few seconds to make the correct choice or they lose the game. The time decreases the higher the score you attain thus increasing the difficulty of the game, and increasing the chance of human error. My interactive site/ game will be built around the same principles of chance. The game was renowned for it's use of cheeky slang and comments if you lose - something I want to keep as true to life as possible to make it a thoroughly reminiscint reimagining of the Hasbro 90s classic.
+The user had approximately 4 few seconds to make the correct choice or they lose the game. The time decreases the higher the score you attain thus increasing the difficulty of the game, and increasing the chance of human error. My interactive site/ game will be built around the same principles of chance. The game was renowned for it's use of cheeky slang and comments if you lose - something I want to keep as true to life as possible to make it a thoroughly reminiscint reimagining of the Hasbro 90s classic. In the era of fidget spinners I wanted to reimagine a game that brough many hours of enjoyment into my home.
 
 #### Elements I wish to include:
 
-* Theme selector - bright and light or dark mode
+* Theme selector/ toggle - bright and light or dark mode
 * Name input field prior to game kick off
+* Interactive Title to incorporate username / include the cheeky element of the Hasbro classic
 * Scoreboard  
-* High score dahsboard on main page.
+* High score dahsboard on end game page.
 
 
-## My iniital Brainstorm around this Project and idea flow:
--User enters usernmae
+## Project / UI Flow
+* User enters usernmae in text input
 * Message appears - Hi username, please hit start to begin or click here to view the rules. 
 * Start Button - count down from 5
- * Onclick the computer selects at random from Bop it, twist it, flick it pull it.
+* Onclick the computer selects at random from Bop it, twist it, flick it pull it.
 * The user has 4 seconds to hit the corresponding button
 * If the user hits the wrong button - Game Over displays with the score
 * If the user makes the right choice it adds a point to the score and keeps looping until the user makes a wrong choice
 * After 10 correct selections, the user has 3 seconds to make the right selection
 * After 20 correct seclections, the user has 2 seconds
 * After 30 correct selections the user has 1 second.
-* If user achieves a high score it is saved to the Scoreboard with the username. 
+* If user achieves a high score it is saved to the Scoreboard with the username.
+* If user makes wrong choice - end game screen will display. 
 
 #### UX
 ##  External user’s goal:
 
-    The site’s users want to play an online game that has elements of chance.
+* The site’s users want to play an online game that has elements of chance. 
+* The site's users want to be able to easily understand the function of the site.
+* The site users want to be able to easily navigate the site / not requiring many clicks or remembering navigation.
+* The site users want to be able to manipulate the UI to suit thier display preference.
 
 ##  Site owner's goal:
 
-    The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
-
+* The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
+* The site's goal is to provide a simple UI that allows user have input into the display of information
 
 
 ## Design
@@ -84,7 +90,12 @@ https://www.sounds-resource.com/mobile/bopit/sound/23634/
 ## Citations
 I drew inspiration heavily from the love Maths project completed as part of the course. I used this as almost a template or boiler plate for structural purposes.
 
-`python3 -m http.server`
+
+I relied heavily on Font awesome for thier amazing selection of icons and typography 
+
+
+Adding Grit / texture - code taken from the below website:
+https://www.viget.com/articles/easy-textures-with-css-masks/
 
 
 w3 schoools
@@ -99,16 +110,26 @@ Thank you to Kasia Bogucka the cohort leader for her kind nature and dedication 
 ------
 
 ## Testing
+#### Deubgging
+I made the error of using alerts for my first pass at validation testing, after much frustration I removed them to use console.logs instead which allow for ease of testing
+The first round of testing was physically checking for errors in the validators, which was completed on a daily basis was to run through the HTML and CSS validators to ensure there were no errors. I decided to do this daily to reduce the chance of introducing lots of errors in to my code which would take a long time to debug and resolve. This is one of the major lessons learned from my last project.
 
-The first round of testing ws physically checking for errors in the validators, which was completed on a daily basis was to run through the HTML and CSS validators to ensure there were no errors. I decided to do this daily to reduce the chance of introducing lots of errors in to my code which would take a long time to debug and resolve. This is one of the major lessons learned from my last project.
+From project 1 I learned the importance of using Dev tools for the first pass at debugging, but also for altering UI elements and checking the outcome before amending the branch which runs the risk of introducing new errors.
 
-Lighthouse testing 
 
-User testing
+#### Css Validation:
+
+
+#### Javascript Validation
+
+
+#### Lighthouse testing 
+
+#### User testing
 
 Peer Code Review 
 
-Mentor 
+Mentor. I tried to make the best use of ym time with my mentor Martina and made it clear that my goal here is to ensure I am ticking the pass criteria boxes at a minimum, and then focus on any added extra elements I can achieve. 
 
 Tutor
 

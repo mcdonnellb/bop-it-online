@@ -43,7 +43,7 @@ function startGame() {
 let ci= document.getElementById("computer-instructions").innerHTML;
 let score =0;
 let maxScore = 10;
-          var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
+        //  var scoreBoard = document.getElementById("scoreboard").innerHTML =score;  
           let usern= document.getElementById("user-name").innerHTML = namePlate.value;
           this.taskDelay=1000; 
 generateComputerInstructions();
@@ -68,6 +68,8 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
     function gameOver(){
 return("THIS GAME IS OVER");
 
+//push the username and score into the highscore array which will be displayed on the end game screen.
+
     }
 
 
@@ -76,11 +78,11 @@ function buttonClicked(){
          ci = document.getElementById("computer-instructions").innerHTML;
               if (ci == clickedButton){
                 score +=1;
-          document.getElementById('scoreboard').innerHTML = score;
+          document.getElementById('scoreboard').innerHTML ="YOUR POINTS:   " +score;
           console.log('you got another point WOOHOO');
           generateComputerInstructions();
           } else {
-          document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'Your score = ' +score;
+          document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'YOUR POINTS = ' +score;
           // need to add something to stop player being allowed to click on right button after game has ended eg game in play = false.
         
           gameOver();
@@ -96,8 +98,8 @@ function buttonClicked(){
       }
 
  document.getElementById('try-again').addEventListener("click", reloadPage());
-//function reloadPage() {
-  document. location. reload()
+function reloadPage() {
+         //document. location. reload()
 }
 
 
@@ -112,9 +114,8 @@ function showRules() {
 function generateComputerInstructions() {
 let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
 let randomItems = items[Math.floor(Math.random()*5 )];
- // let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
-        for (let i = 0; i < 5; i++) {
-         let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
+for (let i = 0; i < 5; i++) {
+let computerInstructions= document.getElementById("computer-instructions").innerHTML= randomItems;
 }
 }
 

@@ -34,7 +34,6 @@ float: right;
     margin-left: 10%;
     text-transform: uppercase;
     width: 80%;
-    text-shadow: -1px 0 black, 0 5px black, 5px 0 black, 0 -1px black;
 }
 #scoreboard {
 font-size: 70%;

@@ -38,7 +38,7 @@ The user had approximately 4 few seconds to make the correct choice or they lose
 
 I chose to add a dark mode feature as this has become a really popular element in websites and applications in recent years, an option which I myself use on a daily basis as it increases the contrast for me and is less harsh on my eyes. 
 
-#### Elements I wish to include:
+#### Functionality:
 
 * Theme selector/ toggle - bright and light or dark mode
 * Name input field prior to game kick off
@@ -90,6 +90,7 @@ Font: Black
 ![light Mode Iphone ](assets/images/iphonexr_landingpage.jpg "light mode landing page")
 ![light Mode game in play ](assets/images/iphone_xr_game_in_play.jpg "light mode game in play")
 ![light Mode game over ](assets/images/iphone_xr_game_over.jpg "light mode game over")
+![game title changes based on username ](assets/images/name_update_in_game_title.jpg "game title updated")
 
 #### Dark Mode
 Background color: Black
@@ -133,6 +134,7 @@ The first round of testing was physically checking for errors in the validators,
 
 From project 1 I learned the importance of using Dev tools for the first pass at debugging, but also for altering UI elements and checking the outcome before amending the branch which runs the risk of introducing new errors.
 
+
 #### Style
 My initial template I had put together for the game changed vastly based on the user feedback I received.
 My initial styling had a toggle for dark mode, a submit button for entering your name and a start game button to start the game.
@@ -141,6 +143,9 @@ The initial screen contained all elements ( game container, buttons etc)
 
 From the feedback I received, and also trying to keep in line with UX best practices, I simplied the workflow of the page, removing the extra button, removing the toggle to replace with a simple bulb image, setting elements to hidden by default until they are needed. 
 
+My design is responsive for use on tablet / mobile by using both percentages / flex box and a media query, to ensure accessability across platforms/ devices.
+
+My design was tested on both IOS and android mobile devices, and windows and Mac OS desktop.
 #### HTML Validation:
 ![WscSchools](assets/images/w3schools_HTML_validator.jpg "HTML Validation")
 
@@ -179,6 +184,7 @@ Some of the critical errors found and the items used to overcome the errors
 
 * Start Game funtion - initially I had the generate random computer instruction function within start game function and const variables set for the randomise function.
 Start Game would only generate item from array once, even if clicked on multiple times, you had to refresh the page then reclick and it may generate a different item. This was the longest standing problem and was the simplest to fix.
+* my site was not being responsive on mobile devices which again turned out to me a tiny issue, a missing semi colon in the media queries!
 
 
 #### Known Bugs / Quirks 

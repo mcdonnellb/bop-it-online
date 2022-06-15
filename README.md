@@ -146,11 +146,11 @@ The initial screen contained all elements ( game container, buttons etc)
 From the feedback I received, and also trying to keep in line with UX best practices, I simplied the workflow of the page, removing the extra button, removing the toggle to replace with a simple bulb image, setting elements to hidden by default until they are needed. 
 
 #### HTML Validation:
-![WscSchools](assets/images/w3schools_HTMLvalidator.jpg"HTML Validation")
+![WscSchools](assets/images/w3schools_HTML_validator.jpg "HTML Validation")
 
 #### Javascript Validation
 
-![Jshint validation](assets/images/jshint_output_js_file.jpg"Javascript validation")
+![Jshint validation](assets/images/jshint_output_js_file.jpg "Javascript validation")
 
 #### CSS Validation
 

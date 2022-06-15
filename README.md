@@ -12,11 +12,7 @@ My idea for project 2 is for an interactive 'Bop-it' online game. To meet the pr
 
 Bop it was a hand held game created by Hasbro popularised in the 90's as a boredom beater, whereby the user would be guided by audio to selectand engage with one of the 5 choices below.
 
-  Bop it
-  Flick it
-  Twist it 
-  Pull it
-  Spin it 
+  Bop it Flick it,Twist it, Pull it, Spin it 
 
 The user had approximately 4 few seconds to make the correct choice or they lose the game. The time decreases the higher the score you attain thus increasing the difficulty of the game, and increasing the chance of human error. My interactive site/ game will be built around the same principles of chance. The game was renowned for it's use of cheeky slang and comments if you lose - something I want to keep as true to life as possible to make it a thoroughly reminiscint reimagining of the Hasbro 90s classic. In the era of fidget spinners I wanted to reimagine a game that brough many hours of enjoyment into my home.
 
@@ -64,13 +60,13 @@ I am clearly not a graphic designer, so I tried to use some of the knowledge fro
 One website I found really helpful for selecting the UI colours was the below:
 https://flatuicolors.com/palette/us
 
-#### Light Mode
+#### Light Mode / default
 Background: White
 Font: Purple
 
 #### Dark Mode
-Background - Dracula Orchid #2d3436
-font color - city lights #dfe6e9
+Background -
+font color - 
 
 
 
@@ -78,7 +74,7 @@ font color - city lights #dfe6e9
 The typography used throughout the site was specifically chosen as I felt it was a bold yet readable font, again tying in with the Hasbro branding.
 
 
-#### Images and Media
+####  Media
 The images used for this project have been taken from the below sites:
 
 

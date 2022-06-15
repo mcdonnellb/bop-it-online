@@ -20,9 +20,7 @@ pullItButton.addEventListener("click", buttonClicked);
 const spinItButton = document.getElementById("spin-it");
 spinItButton.addEventListener("click", buttonClicked);
 
-/*Setting up the Audio variables for the game*/
-//var bopItAudio = new Audio();
-//bopItAudio.src = "assets/audio/Bop.wav";
+
 /* setting the dark mode function on the click of the moon - I read many a thread about dark mode main inspo taken from w3c schools*/
 let darkmodeToggle = document.getElementById("darkmode-toggle");
 darkmodeToggle.addEventListener("click", enableDarkmode);
@@ -66,6 +64,9 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
           sb.style.display ="none";
           gt = document.getElementById("game-title");
           gt.innerHTML= "Maybe next time  " +namePlate.value ; 
+          let bopItAudio = new Audio();
+          bopItAudio.src = "assets/audio/Bop.wav";
+          bopItAudio.play();
 
 //push the username and score into the highscore array which will be displayed on the end game screen.
 

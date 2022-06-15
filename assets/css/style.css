@@ -152,7 +152,7 @@ width: 40%;
 }
     *{
       
-      font-family:  Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family:  Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
 }
 
     /* This section will look after the footer section, I am adding a footer just to make this look a little more professional as it is quite basic at present*/
@@ -268,3 +268,16 @@ display:none;
     -webkit-mask-image: url("/assets/images/grit.png");
     mask-image: url("/assets/images/grit.png");
   }
+
+
+  /* This section is dealing with the media queries to ensure the site is responsive to use on several devices/*
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 900px) {
+     #game-title {
+      display: block;
+      text-align: left; 
+      font-size: 20px;
+      font-style: normal; 
+      text-shadow: none;
+  }
+}

@@ -79,7 +79,6 @@ function buttonClicked(){
               if (ci == clickedButton){
                 score +=1;
           document.getElementById('scoreboard').innerHTML ="YOUR POINTS:   " +score;
-          console.log('you got another point WOOHOO');
           generateComputerInstructions();
           } else {
           document.getElementById('scoreboard').innerHTML ="GAME OVER" +namePlate.value +'YOUR POINTS = ' +score;

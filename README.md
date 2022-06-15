@@ -1,22 +1,23 @@
 ## Project 2 - Bernadette McDonnell
-
++ [Introduction](#introduction "introduction")
++ [Technologies Used](#technologies-used "Technologies Used")
 + [User Experience](#userexperience "User Experience")
-  + [User Stories](#user-stories "User Stories")
-  + [User Goals](#user-goals "User Goals")
-  + [Requirements](#requirements "Requirements")
++ [Project UI/ View](#project--ui-flow "Project UI/ flow")
++ [UX](#UX")
+  + [External User Goals](#external-user-goals "External User Goals")
+  + [Site Owner Goals](#site-owner-goals "Site Owner Goals")
   + [Design](#design "Design")
-    + [Typography](#typography "Typography")
-  + [Testing](#testing "Testing")
-    + [Functionality](#functionality "Functionality")
-    + [Styling](#styling "Styling")
-    + [Error Log](#errorlog "Error Log")
++ [Citations](#citations "Citations")
++ [Testing](#testing "Testing")
     + [CSS Validation](#cssvalidation "CSS Validation")
     + [HTML Validation](#htmlvalidation "HTML Validation")
-
-  + [Citations](#citations "Citations")
++ [Deployment](#deployment "Deployment")
++ [Error Log](#errorlog "Error Log")
+    + [Known Bugs Quirks](#known-bugs-quirks "Known Bugs/ Quirks")
+    + [Future Features](#future-features "Future Features")
+    + [Functionality](#functionality "Functionality")
 + [Lessons Learned](#lessons-learned “Lessons Learned")
-+ [Quirks](#quirks "Quirks")
-  + [Future Features](#future-features "Future Features")
+
 
 
 
@@ -95,11 +96,6 @@ Background color: Black
 font color: white 
 
 ![Dark Mode Iphone ](assets/images/dark_mode_enabled.jpg "Dark Mode enabled")
-
-#### Typography
-The typography used throughout the site was specifically chosen as I felt it was a bold yet readable font, again tying in with the Hasbro branding.
-
-Font: 
 
 ####  Media
 The audio for the game was taken from the below website and was the audio from the original game created by Hasbro:

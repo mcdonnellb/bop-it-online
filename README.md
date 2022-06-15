@@ -73,7 +73,7 @@ I chose to add a dark mode feature as this has become a really popular element i
 * The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
 * The site's goal is to provide a simple UI that allows user have input into the display of information
 
-![wireframe of project idea](assets/images/wireframe_project_concept.png"Project Concept Wireframe")
+![wireframe of project idea](assets/images/wireframe_project_concept.png "Project Concept Wireframe")
 
 ## Design
 The colors I have chosen are once again in line with my personal minimalistic preference, but keeping in line with the Bop IT/ Hasbro  Branding colours.
@@ -86,15 +86,15 @@ https://flatuicolors.com/palette/us
 Background: (208, 216, 218, 0.808);
 Font: Black
 
-![light Mode Iphone ](assets/images/iphonexr_landingpage.jpg"light mode landing page")
-![light Mode game in play ](assets/images/iphone_xr_game_in_play.jpg"light mode game in play")
-![light Mode game over ](assets/images/iphone_xr_game_over.jpg"light mode game over")
+![light Mode Iphone ](assets/images/iphonexr_landingpage.jpg "light mode landing page")
+![light Mode game in play ](assets/images/iphone_xr_game_in_play.jpg "light mode game in play")
+![light Mode game over ](assets/images/iphone_xr_game_over.jpg "light mode game over")
 
 #### Dark Mode
 Background color: Black
 font color: white 
 
-![Dark Mode Iphone ](assets/images/dark_mode_enabled.jpg"Dark Mode enabled")
+![Dark Mode Iphone ](assets/images/dark_mode_enabled.jpg "Dark Mode enabled")
 
 #### Typography
 The typography used throughout the site was specifically chosen as I felt it was a bold yet readable font, again tying in with the Hasbro branding.

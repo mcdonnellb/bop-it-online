@@ -73,6 +73,7 @@ I chose to add a dark mode feature as this has become a really popular element i
 * The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
 * The site's goal is to provide a simple UI that allows user have input into the display of information
 
+![wireframe of project idea](assets/images/wireframe_project_concept.png"Project Concept Wireframe")
 
 ## Design
 The colors I have chosen are once again in line with my personal minimalistic preference, but keeping in line with the Bop IT/ Hasbro  Branding colours.
@@ -82,22 +83,23 @@ One website I found really helpful for selecting the UI colours was the below:
 https://flatuicolors.com/palette/us
 
 #### Light Mode / default
-Background: White
-Font: Purple
+Background: (208, 216, 218, 0.808);
+Font: Black
 
-
+![light Mode Iphone ](assets/images/iphonexr_landingpage.jpg"light mode landing page")
+![light Mode game in play ](assets/images/iphone_xr_game_in_play.jpg"light mode game in play")
+![light Mode game over ](assets/images/iphone_xr_game_over.jpg"light mode game over")
 
 #### Dark Mode
 Background color: Black
 font color: white 
 
-
+![Dark Mode Iphone ](assets/images/dark_mode_enabled.jpg"Dark Mode enabled")
 
 #### Typography
 The typography used throughout the site was specifically chosen as I felt it was a bold yet readable font, again tying in with the Hasbro branding.
 
 Font: 
-
 
 ####  Media
 The audio for the game was taken from the below website and was the audio from the original game created by Hasbro:
@@ -143,13 +145,17 @@ The initial screen contained all elements ( game container, buttons etc)
 
 From the feedback I received, and also trying to keep in line with UX best practices, I simplied the workflow of the page, removing the extra button, removing the toggle to replace with a simple bulb image, setting elements to hidden by default until they are needed. 
 
-#### Css Validation:
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+#### HTML Validation:
+![WscSchools](assets/images/w3schools_HTMLvalidator.jpg"HTML Validation")
 
 #### Javascript Validation
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![Jshint validation](assets/images/jshint_output_js_file.jpg"Javascript validation")
+
+#### CSS Validation
+
+![CSS](assets/images/css_validation.jpg "CSS Validation")
+
 
 
 #### User testing
@@ -179,8 +185,12 @@ Some of the critical errors found and the items used to overcome the errors
 Start Game would only generate item from array once, even if clicked on multiple times, you had to refresh the page then reclick and it may generate a different item. This was the longest standing problem and was the simplest to fix.
 
 
-#### Known Bugs
+#### Known Bugs / Quirks 
 * If you click on the welcome section it will update with the rules but this screen remains
+* There is no max score so the game can go on indefinitely
+* The scoreboard is not a functioning scoreboard that pushes the usernmae and the score to an array - that's something I will cover in future iterations.
+* Styling of buttons- I specifically have them placed in a non symettrical fashion again trying to keep with the original bop it design.
+* Grit texture is not working & so I will remove before submission
 
 #### Items to be addressed in future iterations
 
@@ -196,4 +206,3 @@ Keep it simple- define a basic scope and stick to it to avoid scope creep. I onc
 This is something I struggle with, I get overwhelmed with the amount of items that need to be done, and then misinterpret or miscalculate the importance of some of the other items. This is somehting I have been working on and every time I find myself down a rabbit hole, I go back to my critical list, is the item I am working on critical, or is it a 'nice to have'.
 
 Dont be afraid to ask for help - I sufferend in silence on this one for quite some time as I didnt want to appear to be struggling, but this really prolonged the pain when in fact sometimes peer review , or a second set of eyes is exactly what is needed.
-

@@ -65,19 +65,18 @@ Background: White
 Font: Purple
 
 #### Dark Mode
-Background -
-font color - 
+Background -#2d3436
+font color - white 
 
 
 
 #### Typography
 The typography used throughout the site was specifically chosen as I felt it was a bold yet readable font, again tying in with the Hasbro branding.
 
+Font: 
+
 
 ####  Media
-The images used for this project have been taken from the below sites:
-
-
 The audio for the game was taken from the below website and was the audio from the original game created by Hasbro:
 
 https://www.sounds-resource.com/mobile/bopit/sound/23634/
@@ -103,8 +102,6 @@ Thank you to my wonderful mentor Martina, for her excellent and helpful insight.
 
 Thank you to Kasia Bogucka the cohort leader for her kind nature and dedication to ensure we all success at our 
 
-------
-
 ## Testing
 #### Deubgging
 I made the error of using alerts for my first pass at validation testing, after much frustration I removed them to use console.logs instead which allow for ease of testing
@@ -112,22 +109,29 @@ The first round of testing was physically checking for errors in the validators,
 
 From project 1 I learned the importance of using Dev tools for the first pass at debugging, but also for altering UI elements and checking the outcome before amending the branch which runs the risk of introducing new errors.
 
+#### Style
+My initial template I had put together for the game changed vastly based on the user feedback I received.
+My initial styling had a toggle for dark mode, a submit button for entering your name and a start game button to start the game.
+
+The initial screen contained all elements ( game container, buttons etc)
+
+From the feedback I received, and also trying to keep in line with UX best practices, I simplied the workflow of the page, removing the extra button, removing the toggle to replace with a simple bulb image, setting elements to hidden by default until they are needed. 
 
 #### Css Validation:
-
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 #### Javascript Validation
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
-
-#### Lighthouse testing 
 
 #### User testing
 
-Peer Code Review 
+###### Mentor session
+ I tried to make the best use of ym time with my mentor Martina and made it clear that my goal here is to ensure I am ticking the pass criteria boxes at a minimum, and then focus on any added extra elements I can achieve. 
 
-Mentor. I tried to make the best use of ym time with my mentor Martina and made it clear that my goal here is to ensure I am ticking the pass criteria boxes at a minimum, and then focus on any added extra elements I can achieve. 
-
-Tutor
+###### Tutor
 
 I used Tutor support for this project as I really struggled with some of my Javascript functions. The tutors, while not fixing or amending my code, were able to steer me back onto the right path by reiterating industry standards/ common practice in key areas I was clearly lacking.
 
@@ -136,15 +140,18 @@ As with the previous assessment I deployed this assignemnet through Gitpod and h
 
 My approach for this assessment was quite different. I broke the scope down into subsections, and while I will readily admit to losing a substantial amount of time working on non critical elements ( dark mode), I found it a lot easier to manage my time for this project.
 
-I deployed a Github page for this project very early which allowed me the opportunity to test this from my mobile at random.
+I deployed a Github page for this project very early which allowed me the opportunity to test this from my mobile at random, and easily share with peers and friends to for testing purposes:
 
-I also tried to keep the commits very specific to enable ease of reference ( so when I accidentally remove too much code for example it's easy for me to locate) but also to ensure I am getting used to that iterative process, focusing on the task at hand, commiting, then moving on to the next item on the list.
+https://mcdonnellb.github.io/bop-it-online/
+
+I also tried to keep the commits very specific to enable ease of reference ( so when I accidentally remove too much code for example it's easy for me to locate) but also to ensure I am getting used to that iterative process, focusing on the task/ feature at hand, commiting, then moving on to the next item on the list. 
 
 ## Error Log 
 Some of the critical errors found and the items used to overcome the errors
 
-Start Game funtion - initially I had the generate random computer instruction function within start game function and const variables set for the randomise function.
+* Start Game funtion - initially I had the generate random computer instruction function within start game function and const variables set for the randomise function.
 Start Game would only generate item from array once, even if clicked on multiple times, you had to refresh the page then reclick and it may generate a different item. This was the longest standing problem and was the simplest to fix.
+
 
 #### Known Bugs
 * If you click on the welcome section it will update with the rules but this screen remains

@@ -38,7 +38,6 @@ float: right;
 }
 #scoreboard {
 font-size: 70%;
-float:right;
 position: absolute;
 width:25%;
 height: 280px;
@@ -264,10 +263,10 @@ display:none;
 }
 /* This is taken from and was not written by me. https://www.viget.com/articles/easy-textures-with-css-masks/ */
 .grit {
-    -webkit-mask-image: url("/assets/images/grit.png");
-    mask-image: url("/assets/images/grit.png");
+    -webkit-mask-image:("/assets/images/grit.png");
+    mask-image: ("/assets/images/grit.png");
   }
-
+ 
 
   /* This section is dealing with the media queries to ensure the site is responsive to use on several devices/*
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */

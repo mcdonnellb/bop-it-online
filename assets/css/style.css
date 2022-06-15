@@ -265,8 +265,9 @@ display:none;
 }
 /* This is taken from and was not written by me. https://www.viget.com/articles/easy-textures-with-css-masks/ */
 .grit {
-    -webkit-mask-image: url('/assets/images/grit.png');
-    mask-image: url('/assets/images/grit.png');
+    -webkit-mask-image: url('../images/grit.png');
+     mask-image: url('../images/grit.png');
+  
   }
  
 

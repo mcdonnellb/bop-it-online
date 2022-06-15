@@ -16,7 +16,7 @@
     + [Known Bugs Quirks](#known-bugs-quirks "Known Bugs/ Quirks")
     + [Future Features](#future-features "Future Features")
     + [Functionality](#functionality "Functionality")
-+ [Lessons Learned](#lessons-learned “Lessons Learned")
+  + [Lessons Learned](#lessons-learned "Lessons Learned")
 
 
 

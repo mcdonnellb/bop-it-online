@@ -158,7 +158,7 @@ width: 40%;
     /* This section will look after the footer section, I am adding a footer just to make this look a little more professional as it is quite basic at present*/
    footer {
     height: 20%;
-    width:80%;
+    width:100%;
     justify-content: space-around; 
     justify-content: center;
     margin-left:10%;
@@ -175,11 +175,10 @@ width: 40%;
   }
 .social-networks  i {
     font-size:160%; 
-    margin:40%;
-    padding:15px;
+    padding:25px;
     color: #fffdfd;
     bottom:20px;
-    justify-content: space-evenly; 
+    justify-content: center; 
 
  }
 
@@ -280,4 +279,11 @@ display:none;
       font-style: normal; 
       text-shadow: none;
   }
+
+  .social-networks {
+    text-align:center;
+    position:relative;
+    display:block;
+    height: 200px;
+    left:2px;
 }

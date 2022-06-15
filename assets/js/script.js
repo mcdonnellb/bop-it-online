@@ -21,14 +21,14 @@ const spinItButton = document.getElementById("spin-it");
 spinItButton.addEventListener("click", buttonClicked);
 
 
-/* setting the dark mode function on the click of the moon - I read many a thread about dark mode main inspo taken from w3c schools*/
+/* setting the dark mode function on the click of the lightbulb - I read many a thread about dark mode main inspo taken from w3c schools*/
 let darkmodeToggle = document.getElementById("darkmode-toggle");
 darkmodeToggle.addEventListener("click", enableDarkmode);
 function enableDarkmode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
 }
-// Function for Start Game - this needs to Welcome the User, count down from 5 then select from the array, will keep going as user selects the right button but ends when they select the wrong button then displays Game over screen
+
 const startButton = document.getElementById("startButton");
 startButton.addEventListener("click", startGame);
 
@@ -50,8 +50,7 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
             document.getElementById("game-title").innerHTML= "This is Your Time to Shine " + namePlate.value;
             document.getElementById("user-name").innerHTML= namePlate.value;
     }
-
-    function gameOver(){
+   function gameOver(){
           gameContainerHidden = document.getElementById('game-container');
           gameVariablesScreenHidden = document.getElementById('game-variables');
           gameContainerHidden.style.display = "none";
@@ -65,11 +64,8 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
           gt = document.getElementById("game-title");
           gt.innerHTML= "Maybe next time  " +namePlate.value ; 
           let bopItAudio = new Audio();
-          bopItAudio.src = "assets/audio/Bop.wav";
+          bopItAudio.src = "assets/audio/Banter_52.wav";
           bopItAudio.play();
-
-//push the username and score into the highscore array which will be displayed on the end game screen.
-
     }
 
 
@@ -93,16 +89,6 @@ function reloadPage() {
   location.reload();
   return false;
 }
-
-
-// section to deal with the rules screen & visibilty 
-//document.getElementById("show-rules-section").addEventListener("click", showRules);
-
-//function showRules() {
-  //        document.getElementById("show-rules-section").innerHTML ="The rules of the game are simple - keep up with the computers instructions";
-//}
-// function to deal with generating the random selection from the array
-
 function generateComputerInstructions() {
 let items = ["bop-it", "twist-it", "pull-it", "flick-it", "spin-it"];
 let randomItems = items[Math.floor(Math.random()*5 )];

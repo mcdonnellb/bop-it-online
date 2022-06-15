@@ -51,17 +51,17 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
             document.getElementById("user-name").innerHTML= namePlate.value;
     }
    function gameOver(){
-          gameContainerHidden = document.getElementById('game-container');
-          gameVariablesScreenHidden = document.getElementById('game-variables');
+          let gameContainerHidden = document.getElementById('game-container');
+          let gameVariablesScreenHidden = document.getElementById('game-variables');
           gameContainerHidden.style.display = "none";
           gameVariablesScreenHidden.style.display = "none";
-          endGameScreen = document.getElementById('end-game-screen');
+          let endGameScreen = document.getElementById('end-game-screen');
           endGameScreen.style.display ="block";
-          ud = document.getElementById("user-details");
+          let ud = document.getElementById("user-details");
           ud.style.display="none";
-          sb = document.getElementById("startButton");
+          let sb = document.getElementById("startButton");
           sb.style.display ="none";
-          gt = document.getElementById("game-title");
+          let gt = document.getElementById("game-title");
           gt.innerHTML= "Maybe next time  " +namePlate.value ; 
           let bopItAudio = new Audio();
           bopItAudio.src = "assets/audio/Banter_52.wav";
@@ -70,8 +70,8 @@ document.getElementById("user-details").addEventListener("submit", nameEntered);
 
 
 function buttonClicked(){
-         clickedButton = this.id;
-         ci = document.getElementById("computer-instructions").innerHTML;
+        let clickedButton = this.id;
+        let ci = document.getElementById("computer-instructions").innerHTML;
               if (ci == clickedButton){
                 score +=1;
           document.getElementById('scoreboard').innerHTML ="YOUR POINTS:   " +score;
@@ -84,7 +84,7 @@ function buttonClicked(){
 
 document.getElementById("try-again").addEventListener("click", reloadPage);
 function reloadPage() {
-  gos = document.getElementById("end-game-screen");
+  let gos = document.getElementById("end-game-screen");
   gos.style.display="none";
   location.reload();
   return false;

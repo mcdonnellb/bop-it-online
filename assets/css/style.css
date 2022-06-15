@@ -39,7 +39,7 @@ float: right;
 #scoreboard {
 font-size: 70%;
 float:right;
-position: absoulte;
+position: absolute;
 width:25%;
 height: 280px;
 }
@@ -152,7 +152,7 @@ width: 40%;
 }
     *{
       
-      font-family:  Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+      font-family:  'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
 }
 
     /* This section will look after the footer section, I am adding a footer just to make this look a little more professional as it is quite basic at present*/
@@ -286,4 +286,5 @@ display:none;
     display:block;
     height: 200px;
     left:2px;
+}
 }

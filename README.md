@@ -1,4 +1,23 @@
-## Project 2
+## Project 2 - Bernadette McDonnell
+
++ [User Experience](#userexperience "User Experience")
+  + [User Stories](#user-stories "User Stories")
+  + [User Goals](#user-goals "User Goals")
+  + [Requirements](#requirements "Requirements")
+  + [Design](#design "Design")
+    + [Typography](#typography "Typography")
+  + [Testing](#testing "Testing")
+    + [Functionality](#functionality "Functionality")
+    + [Styling](#styling "Styling")
+    + [Error Log](#errorlog "Error Log")
+    + [CSS Validation](#cssvalidation "CSS Validation")
+    + [HTML Validation](#htmlvalidation "HTML Validation")
+
+  + [Citations](#citations "Citations")
++ [Lessons Learned](#lessons-learned “Lessons Learned")
++ [Quirks](#quirks "Quirks")
+  + [Future Features](#future-features "Future Features")
+
 
 
 ####  Bop-it Online ineractive site
@@ -12,9 +31,11 @@ My idea for project 2 is for an interactive 'Bop-it' online game. To meet the pr
 
 Bop it was a hand held game created by Hasbro popularised in the 90's as a boredom beater, whereby the user would be guided by audio to selectand engage with one of the 5 choices below.
 
-  Bop it Flick it,Twist it, Pull it, Spin it 
+  *Bop it Flick it,Twist it, Pull it, Spin it*
 
 The user had approximately 4 few seconds to make the correct choice or they lose the game. The time decreases the higher the score you attain thus increasing the difficulty of the game, and increasing the chance of human error. My interactive site/ game will be built around the same principles of chance. The game was renowned for it's use of cheeky slang and comments if you lose - something I want to keep as true to life as possible to make it a thoroughly reminiscint reimagining of the Hasbro 90s classic. In the era of fidget spinners I wanted to reimagine a game that brough many hours of enjoyment into my home.
+
+I chose to add a dark mode feature as this has become a really popular element in websites and applications in recent years, an option which I myself use on a daily basis as it increases the contrast for me and is less harsh on my eyes. 
 
 #### Elements I wish to include:
 
@@ -64,9 +85,11 @@ https://flatuicolors.com/palette/us
 Background: White
 Font: Purple
 
+
+
 #### Dark Mode
-Background -#2d3436
-font color - white 
+Background color: Black
+font color: white 
 
 
 
@@ -97,6 +120,9 @@ w3 schoools
 Github
 
 https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page
+
+* Read-me guidance:
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#table-of-contents
 
 Thank you to my wonderful mentor Martina, for her excellent and helpful insight. My focus from the outset was to ensure I hit the pass criteria, and Martina helped break this down for me into easier to manage chunks, without which i\ would have essentially allowed the scope to creep into a non plausable for delivery territory.
 
